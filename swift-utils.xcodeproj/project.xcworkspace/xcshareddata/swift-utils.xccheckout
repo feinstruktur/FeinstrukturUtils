@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7CEE583A-9EE6-49C8-A934-58AAD90A9212</string>
+	<key>IDESourceControlProjectName</key>
+	<string>swift-utils</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>51564574F36D7BD9541D29F0C0FDF5BC88E7E38F</key>
+		<string>/Users/sas/Dropbox/Projects/IndexCards</string>
+		<key>EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD</key>
+		<string>/Users/sas/Dropbox/Projects/feinstruktur-swift-utils.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>swift-utils.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>51564574F36D7BD9541D29F0C0FDF5BC88E7E38F</key>
+		<string>../../../..</string>
+		<key>EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>/Users/sas/Dropbox/Projects/feinstruktur-swift-utils.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51564574F36D7BD9541D29F0C0FDF5BC88E7E38F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>feinstruktur-swift-utils</string>
+		</dict>
+	</array>
+</dict>
+</plist>
