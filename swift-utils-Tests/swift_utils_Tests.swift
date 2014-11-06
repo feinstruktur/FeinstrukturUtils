@@ -47,4 +47,12 @@ class ArrayTests: XCTestCase {
         x.remove(1.1)
         XCTAssertEqual(x, [0.0, 2.2, 3.3])
     }
+    
+    func test_each() {
+        var a = [0, 1, 2, 3]
+        var res = [Int]()
+        a.each { res.append($0 + 1) }
+        XCTAssertEqual(res, [1, 2, 3, 4])
+    }
+    
 }

@@ -39,4 +39,11 @@ extension Array {
             }
         }
     }
+    
+    func each(block: (Element) -> ()) {
+        for item in self {
+            block(item)
+        }
+    }
+    
 }
