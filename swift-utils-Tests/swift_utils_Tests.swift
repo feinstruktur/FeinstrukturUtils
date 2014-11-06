@@ -12,6 +12,24 @@ import XCTest
 
 class ArrayTests: XCTestCase {
     
+    func test_random() {
+        let inclusiveMaxValue: UInt32 = 10
+        let n = 1_000_000
+        var minimum: UInt32 = UInt32.max
+        var maximum: UInt32 = 0
+        var mean: Double = 0
+        for i in 0..<n {
+            let r = random(inclusiveMaxValue)
+            minimum = min(minimum, r)
+            maximum = max(maximum, r)
+            mean += Double(r)
+        }
+        mean /= Double(n)
+        XCTAssertEqual(minimum, UInt32(0))
+        XCTAssertEqual(maximum, inclusiveMaxValue)
+        XCTAssertEqualWithAccuracy(mean, 5.0, 0.01)
+    }
+    
     func test_shuffled() {
         var a = [Int]()
         for i in 0..<1000 {
