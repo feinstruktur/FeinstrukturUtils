@@ -9,28 +9,24 @@
 import UIKit
 import XCTest
 
-class swift_utils_Tests: XCTestCase {
+
+class ArrayTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    func test_shuffled() {
+        var a = [Int]()
+        for i in 0..<1000 {
+            a.append(i)
         }
+        XCTAssertNotEqual(a, a.shuffled())
+        XCTAssertNotEqual(a.shuffled(), a.shuffled())
     }
-    
+ 
+    func test_remove() {
+        var a = [0, 1, 2, 1, 3]
+        a.remove(1)
+        XCTAssertEqual(a, [0,2,3])
+        var x = [0.0, 1.1, 2.2, 1.1, 3.3]
+        x.remove(1.1)
+        XCTAssertEqual(x, [0.0, 2.2, 3.3])
+    }
 }
