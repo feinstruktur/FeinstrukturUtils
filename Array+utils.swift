@@ -51,5 +51,15 @@ extension Array {
             block(index, item)
         }
     }
+
+    func indexes<T: Equatable>(item: T) -> [Int] {
+        var results = [Int]()
+        self.each { (index, element) in
+            if element as? T == item {
+                results.append(index)
+            }
+        }
+        return results
+    }
     
 }

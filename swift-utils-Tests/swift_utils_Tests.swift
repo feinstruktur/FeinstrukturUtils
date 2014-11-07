@@ -55,4 +55,11 @@ class ArrayTests: XCTestCase {
         XCTAssertEqual(res, [1, 2, 3, 4])
     }
     
+    func test_indexes() {
+        var a = [0, 1, 4, 1, 3]
+        XCTAssertEqual(a.indexes(1), [1, 3])
+        XCTAssertEqual(a.indexes(4), [2])
+        XCTAssertEqual(a.indexes(5), [])
+    }
+    
 }
