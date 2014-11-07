@@ -46,4 +46,10 @@ extension Array {
         }
     }
     
+    func each(block: (Int, Element) -> ()) {
+        for (index, item) in enumerate(self) {
+            block(index, item)
+        }
+    }
+    
 }
