@@ -38,6 +38,11 @@ class ArrayTests: XCTestCase {
         XCTAssertNotEqual(a, a.shuffled())
         XCTAssertNotEqual(a.shuffled(), a.shuffled())
     }
+    
+    func test_shuffled_empty() {
+        let a = [Int]()
+        XCTAssertEqual(a.shuffled().count, 0)
+    }
  
     func test_remove() {
         var a = [0, 1, 2, 1, 3]
