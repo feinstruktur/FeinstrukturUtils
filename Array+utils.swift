@@ -9,6 +9,10 @@
 import Foundation
 
 
+func random(max: Int) -> UInt32 {
+    return random(UInt32(max))
+}
+
 func random(max: UInt32) -> UInt32 {
     return arc4random_uniform(max + 1)
 }
@@ -17,7 +21,7 @@ func random(max: UInt32) -> UInt32 {
 // Fisher-Yates (aka Knuth) Shuffle
 func shuffle<T>(var array: Array<T>) -> Array<T> {
     for var i = array.count - 1; i > 0; i-- {
-        let j = Int(random(UInt32(i)))
+        let j = Int(random(i))
         swap(&array[j], &array[i])
     }
     return array
