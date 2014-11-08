@@ -9,8 +9,8 @@
 import Foundation
 
 
-func random(max: Int) -> UInt32 {
-    return random(UInt32(max))
+func random(max: Int) -> Int {
+    return Int(random(UInt32(max)))
 }
 
 func random(max: UInt32) -> UInt32 {
