@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A2D5BEB1A0A9CAC005A238B /* swift_utils_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D5BEA1A0A9CAC005A238B /* swift_utils_Tests.swift */; };
+		5A2D5BEB1A0A9CAC005A238B /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D5BEA1A0A9CAC005A238B /* ArrayTests.swift */; };
 		5A2D5BF11A0A9CDA005A238B /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D5BEF1A0A9CDA005A238B /* AppInfo.swift */; };
 		5A2D5BF41A0A9D37005A238B /* Array+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D5BF31A0A9D37005A238B /* Array+utils.swift */; };
+		5A7AF3411A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */; };
+		5A7AF3431A0E2E600048E07C /* InfiniteRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A2D5BE51A0A9CAC005A238B /* swift-utils-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-utils-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2D5BE91A0A9CAC005A238B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A2D5BEA1A0A9CAC005A238B /* swift_utils_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_utils_Tests.swift; sourceTree = "<group>"; };
+		5A2D5BEA1A0A9CAC005A238B /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		5A2D5BEF1A0A9CDA005A238B /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		5A2D5BF31A0A9D37005A238B /* Array+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+utils.swift"; sourceTree = "<group>"; };
+		5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteRandomGeneratorTests.swift; sourceTree = "<group>"; };
+		5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteRandomGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			children = (
 				5A2D5BF31A0A9D37005A238B /* Array+utils.swift */,
 				5A2D5BEF1A0A9CDA005A238B /* AppInfo.swift */,
+				5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */,
 				5A2D5BE71A0A9CAC005A238B /* swift-utils-Tests */,
 				5A2D5BE61A0A9CAC005A238B /* Products */,
 			);
@@ -52,7 +57,8 @@
 		5A2D5BE71A0A9CAC005A238B /* swift-utils-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5A2D5BEA1A0A9CAC005A238B /* swift_utils_Tests.swift */,
+				5A2D5BEA1A0A9CAC005A238B /* ArrayTests.swift */,
+				5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */,
 				5A2D5BE81A0A9CAC005A238B /* Supporting Files */,
 			);
 			path = "swift-utils-Tests";
@@ -131,8 +137,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A2D5BEB1A0A9CAC005A238B /* swift_utils_Tests.swift in Sources */,
+				5A2D5BEB1A0A9CAC005A238B /* ArrayTests.swift in Sources */,
+				5A7AF3431A0E2E600048E07C /* InfiniteRandomGenerator.swift in Sources */,
 				5A2D5BF11A0A9CDA005A238B /* AppInfo.swift in Sources */,
+				5A7AF3411A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift in Sources */,
 				5A2D5BF41A0A9D37005A238B /* Array+utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +268,7 @@
 				5A2D5BED1A0A9CAC005A238B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
