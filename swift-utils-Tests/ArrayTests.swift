@@ -67,4 +67,19 @@ class ArrayTests: XCTestCase {
         XCTAssertEqual(a.indexes(5), [])
     }
     
+    func test_indexOf() {
+        let i1 = ["0", "1", "2", "3"].indexOf("1")
+        XCTAssertEqual(i1!, 1)
+        XCTAssertNil(["0", "1", "2", "3"].indexOf("5"))
+        let i2 = ["0", "1", "2", "2", "3"].indexOf("2")
+        XCTAssertEqual(i2!, 2)
+    }
+    
+    func test_contains() {
+        XCTAssert(["0", "1", "2"].contains("1"))
+        XCTAssertFalse(["0", "1", "2"].contains("3"))
+        XCTAssert(["0", "1", "2"].contains("1", "2"))
+        XCTAssertFalse(["0", "1", "2"].contains("2", "3"))
+    }
+    
 }
