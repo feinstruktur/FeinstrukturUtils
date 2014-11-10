@@ -38,4 +38,28 @@ class InfiniteRandomGeneratorTests: XCTestCase {
         XCTAssertNil(dealer.next())
     }
 
+    func test_next_one() {
+        var dealer = InfiniteRandomGenerator<Int>(array: [1])
+        XCTAssertEqual(dealer.next()!, 1)
+        XCTAssertEqual(dealer.next()!, 1)
+        XCTAssertEqual(dealer.next()!, 1)
+    }
+    
+    func test_next_two() {
+        var firstValueIsZero = 0.0
+        let iterations = 1000
+        for i in 0..<iterations {
+            var dealer = InfiniteRandomGenerator<Int>(array: [0, 1])
+            let firstValue = dealer.next()!
+            if firstValue == 1 {
+                firstValueIsZero++
+            }
+            XCTAssertEqual(dealer.next()!, (firstValue + 1) % 2)
+            XCTAssertEqual(dealer.next()!, firstValue)
+            XCTAssertEqual(dealer.next()!, (firstValue + 1) % 2)
+            XCTAssertEqual(dealer.next()!, firstValue)
+        }
+        XCTAssertEqualWithAccuracy(firstValueIsZero/Double(iterations), 0.5, 0.05)
+    }
+    
 }

@@ -44,6 +44,37 @@ class ArrayTests: XCTestCase {
         XCTAssertEqual(a.shuffled().count, 0)
     }
  
+    func test_shuffled_one() {
+        let a = [1]
+        XCTAssertEqual(a.shuffled(), [1])
+    }
+    
+    func test_shuffled_two() {
+        let a = [1, 2]
+        // make sure this changes order with the expected split
+        var equalCount = 0.0
+        let iterations = 1000
+        for i in 0..<iterations {
+            if a.shuffled() == a {
+                equalCount++
+            }
+        }
+        XCTAssertEqualWithAccuracy(equalCount/Double(iterations), 0.5, 0.05)
+    }
+    
+    func test_shuffled_three() {
+        let a = [1, 2, 3]
+        // make sure this changes order with the expected split
+        var equalCount = 0.0
+        let iterations = 1000
+        for i in 0..<iterations {
+            if a.shuffled() == a {
+                equalCount++
+            }
+        }
+        XCTAssertEqualWithAccuracy(equalCount/Double(iterations), 1.0/3.0 * 1.0/2.0, 0.05)
+    }
+    
     func test_remove() {
         var a = [0, 1, 2, 1, 3]
         a.remove(1)
