@@ -30,7 +30,7 @@ class BaseDataStore {
 
     class func parseConfig(env: Environment) -> ParseConfig {
         assert(false, "override me!")
-        // TODO: blog post - interesting that you can avoid the return here by adding the assert
+        return ParseConfig(applicationId: "", clientKey: "")
     }
 
     class func connect(env: Environment) {
