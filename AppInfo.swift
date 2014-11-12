@@ -14,4 +14,8 @@ class AppInfo {
         return (getenv("UNIT_TESTS") != nil)
     }
     
+    class func versionString() -> String? {
+        return NSBundle(forClass: self).infoDictionary?["CFBundleVersion"] as? String
+    }
+    
 }

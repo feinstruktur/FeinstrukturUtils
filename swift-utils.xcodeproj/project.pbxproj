@@ -12,6 +12,7 @@
 		5A2D5BF41A0A9D37005A238B /* Array+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D5BF31A0A9D37005A238B /* Array+utils.swift */; };
 		5A7AF3411A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */; };
 		5A7AF3431A0E2E600048E07C /* InfiniteRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */; };
+		5A8447441A13B4D0006C9D92 /* AppInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5A2D5BF31A0A9D37005A238B /* Array+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+utils.swift"; sourceTree = "<group>"; };
 		5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteRandomGeneratorTests.swift; sourceTree = "<group>"; };
 		5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteRandomGenerator.swift; sourceTree = "<group>"; };
+		5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		5A2D5BE71A0A9CAC005A238B /* swift-utils-Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */,
 				5A2D5BEA1A0A9CAC005A238B /* ArrayTests.swift */,
 				5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */,
 				5A2D5BE81A0A9CAC005A238B /* Supporting Files */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A2D5BEB1A0A9CAC005A238B /* ArrayTests.swift in Sources */,
+				5A8447441A13B4D0006C9D92 /* AppInfoTests.swift in Sources */,
 				5A7AF3431A0E2E600048E07C /* InfiniteRandomGenerator.swift in Sources */,
 				5A2D5BF11A0A9CDA005A238B /* AppInfo.swift in Sources */,
 				5A7AF3411A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift in Sources */,
