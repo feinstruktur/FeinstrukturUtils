@@ -19,12 +19,13 @@ class TestObject: NSObject {
 
 class ObserverTests: XCTestCase {
 
-    func test_init() {
+    func test_basic() {
         let obj = TestObject()
         obj.attribute = "foo"
         
         let exp = self.expectationWithDescription("")
-        let obs = Observer(observedObject: obj, keyPath: "attribute") {
+        let obs = Observer(observedObject: obj, keyPath: "attribute") { newValue in
+            XCTAssertEqual(newValue as String, "bar")
             exp.fulfill()
         }
         obj.attribute = "bar"

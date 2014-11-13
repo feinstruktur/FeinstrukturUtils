@@ -13,10 +13,10 @@ class Observer: NSObject {
     
     var observedObject: NSObject
     var keyPath: String
-    var block: Void -> Void
+    var block: AnyObject? -> Void
     
     
-    init(observedObject: NSObject, keyPath: String, block: Void -> Void) {
+    init(observedObject: NSObject, keyPath: String, block: AnyObject? -> Void) {
         self.observedObject = observedObject
         self.keyPath = keyPath
         self.block = block
@@ -32,7 +32,8 @@ class Observer: NSObject {
     
     override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
         if keyPath == self.keyPath {
-            self.block()
+            let newValue: AnyObject? = change[NSKeyValueChangeNewKey]
+            self.block(newValue)
         }
     }
     
