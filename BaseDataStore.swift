@@ -10,19 +10,19 @@ import Foundation
 import Parse
 
 
-enum Environment {
+public enum Environment {
     case Test
     case Production
 }
 
 
-struct ParseConfig {
+public struct ParseConfig {
     var applicationId: String
     var clientKey: String
 }
 
 
-class BaseDataStore {
+public class BaseDataStore {
     
     class func registerSubclasses() {
         assert(false, "override me!")
@@ -33,7 +33,7 @@ class BaseDataStore {
         return ParseConfig(applicationId: "", clientKey: "")
     }
 
-    class func connect(env: Environment) {
+    public class func connect(env: Environment) {
         registerSubclasses()
         configureParse(env)
     }

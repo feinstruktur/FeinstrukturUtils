@@ -11,13 +11,13 @@ import Foundation
 
 extension String {
     
-    func split() -> [String] {
+    public func split() -> [String] {
         let separators = NSCharacterSet(charactersInString: " \t,")
         let parts = self.componentsSeparatedByCharactersInSet(separators)
         return parts.filter { countElements($0) > 0 }
     }
  
-    func urlEncode() -> String? {
+    public func urlEncode() -> String? {
         return self.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
     }
     
