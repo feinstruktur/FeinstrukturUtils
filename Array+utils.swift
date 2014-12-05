@@ -75,6 +75,15 @@ extension Array {
         return nil
     }
     
+    func indexOf(filter: (Element) -> Bool) -> Int? {
+        for (index, item) in enumerate(self) {
+            if filter(item) {
+                return index
+            }
+        }
+        return nil
+    }
+
     func contains<T: Equatable>(items: T...) -> Bool {
         return items.reduce(true) { (i, j) in i && (self.indexOf(j) != nil) }
     }
