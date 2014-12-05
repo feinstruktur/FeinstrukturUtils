@@ -79,4 +79,13 @@ extension Array {
         return items.reduce(true) { (i, j) in i && (self.indexOf(j) != nil) }
     }
     
+    func first(filter: (Element) -> Bool) -> Element? {
+        for item in self {
+            if filter(item) {
+                return item
+            }
+        }
+        return nil
+    }
+
 }

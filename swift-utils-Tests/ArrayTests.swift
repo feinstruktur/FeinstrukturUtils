@@ -113,4 +113,9 @@ class ArrayTests: XCTestCase {
         XCTAssertFalse(["0", "1", "2"].contains("2", "3"))
     }
     
+    func test_first() {
+        let a = [0, 1, 2, 3, 4]
+        XCTAssertEqual(a.first({ $0 > 0 && $0 % 2 == 0 })!, 2)
+        XCTAssertNil(a.first({ $0 > 5 }))
+    }
 }
