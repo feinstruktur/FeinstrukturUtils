@@ -28,6 +28,11 @@ func shuffle<T>(var array: Array<T>) -> Array<T> {
 }
 
 
+public func - <T: Equatable>(first: Array<T>, second: Array<T>) -> Array<T> {
+    return first.minus(second)
+}
+
+
 extension Array {
 
     func shuffled() -> Array {
@@ -97,4 +102,18 @@ extension Array {
         return nil
     }
 
+    func minus<T: Equatable>(other: [T]) -> [T] {
+        var result = [T]()
+        for item in self {
+            // we need to coerce self to [T] in order to compare items
+            // (otherwise we could write this "return self.filter { !other.contains($0) }"
+            if let itemAsT = item as? T {
+                if !other.contains(itemAsT) {
+                    result.append(itemAsT)
+                }
+            }
+        }
+        return result
+    }
+    
 }

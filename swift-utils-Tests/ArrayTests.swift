@@ -124,4 +124,13 @@ class ArrayTests: XCTestCase {
         XCTAssertEqual(a.first({ $0 > 0 && $0 % 2 == 0 })!, 2)
         XCTAssertNil(a.first({ $0 > 5 }))
     }
+    
+    func test_minus() {
+        let a = [0, 1, 2, 3]
+        let b = [1, 3]
+        XCTAssertEqual(a - b, [0, 2])
+        XCTAssertEqual(b - a, [])
+        XCTAssertEqual(a - ["0"], a)
+    }
+    
 }
