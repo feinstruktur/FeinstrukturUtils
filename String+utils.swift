@@ -17,6 +17,7 @@ extension String {
         return parts.filter { countElements($0) > 0 }
     }
  
+    
     public func urlEncode() -> String? {
         return self.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
     }
