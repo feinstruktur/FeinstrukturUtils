@@ -23,6 +23,12 @@ class StringTests: XCTestCase {
     }
     
     
+    func test_split_dash() {
+        XCTAssertEqual("a-b".split("-"), ["a", "b"])
+        XCTAssertEqual("ab".split("-"), ["ab"])
+    }
+    
+    
     func test_urlEncode() {
         let s = "!*'();:@&=+$,/?%#[]"
         XCTAssertEqual(s.urlEncode()!, "!*'();:@&=+$,/?%25%23%5B%5D")
