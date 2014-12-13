@@ -35,4 +35,10 @@ public class Queue<T> {
     public func peek() -> T? {
         return self.data.first
     }
+    
+    public var values: [T] {
+        get {
+            return Array(self.data)
+        }
+    }
 }
