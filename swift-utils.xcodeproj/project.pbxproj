@@ -17,6 +17,8 @@
 		5A7AF3411A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */; };
 		5A7AF3431A0E2E600048E07C /* InfiniteRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */; };
 		5A8447441A13B4D0006C9D92 /* AppInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */; };
+		5A8D220D1A3C6E4C009BE987 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D220C1A3C6E4C009BE987 /* Random.swift */; };
+		5A8D220F1A3C6EFD009BE987 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D220E1A3C6EFD009BE987 /* RandomTests.swift */; };
 		5AABA5441A1F35C5005C33C9 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABA5431A1F35C5005C33C9 /* Async.swift */; };
 		5AABA5461A1F35E2005C33C9 /* AsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABA5451A1F35E2005C33C9 /* AsyncTests.swift */; };
 		5AABA54E1A1F3EFF005C33C9 /* XCTestCase+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABA54D1A1F3EFF005C33C9 /* XCTestCase+utils.swift */; };
@@ -38,6 +40,8 @@
 		5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteRandomGeneratorTests.swift; sourceTree = "<group>"; };
 		5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteRandomGenerator.swift; sourceTree = "<group>"; };
 		5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoTests.swift; sourceTree = "<group>"; };
+		5A8D220C1A3C6E4C009BE987 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		5A8D220E1A3C6EFD009BE987 /* RandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomTests.swift; sourceTree = "<group>"; };
 		5AABA5431A1F35C5005C33C9 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		5AABA5451A1F35E2005C33C9 /* AsyncTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTests.swift; sourceTree = "<group>"; };
 		5AABA54D1A1F3EFF005C33C9 /* XCTestCase+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+utils.swift"; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 		5A2D5BDA1A0A9BED005A238B = {
 			isa = PBXGroup;
 			children = (
+				5A8D220C1A3C6E4C009BE987 /* Random.swift */,
 				5AC95D061A3C5475005CBA81 /* Queue.swift */,
 				5A2D5BEF1A0A9CDA005A238B /* AppInfo.swift */,
 				5A2D5BF31A0A9D37005A238B /* Array+utils.swift */,
@@ -90,6 +95,7 @@
 				5A7AF3401A0E2D7D0048E07C /* InfiniteRandomGeneratorTests.swift */,
 				5A06DAEF1A13CDF200D5A417 /* ObserverTests.swift */,
 				5AC95D041A3C5232005CBA81 /* QueueTests.swift */,
+				5A8D220E1A3C6EFD009BE987 /* RandomTests.swift */,
 				5A3322721A247CE20075AF75 /* StringTests.swift */,
 				5AABA54F1A1F3FA0005C33C9 /* XCTestCase+utilsTests.swift */,
 				5A2D5BE81A0A9CAC005A238B /* Supporting Files */,
@@ -170,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8D220F1A3C6EFD009BE987 /* RandomTests.swift in Sources */,
 				5A2D5BEB1A0A9CAC005A238B /* ArrayTests.swift in Sources */,
 				5A06DAF21A13CE0E00D5A417 /* Observer.swift in Sources */,
 				5A06DAF01A13CDF200D5A417 /* ObserverTests.swift in Sources */,
+				5A8D220D1A3C6E4C009BE987 /* Random.swift in Sources */,
 				5AABA54E1A1F3EFF005C33C9 /* XCTestCase+utils.swift in Sources */,
 				5A8447441A13B4D0006C9D92 /* AppInfoTests.swift in Sources */,
 				5AABA5441A1F35C5005C33C9 /* Async.swift in Sources */,

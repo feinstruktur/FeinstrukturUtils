@@ -9,25 +9,6 @@
 import Foundation
 
 
-func random(max: Int) -> Int {
-    return Int(random(UInt32(max)))
-}
-
-func random(max: UInt32) -> UInt32 {
-    return arc4random_uniform(max + 1)
-}
-
-
-// Fisher-Yates (aka Knuth) Shuffle
-func shuffle<T>(var array: Array<T>) -> Array<T> {
-    for var i = array.count - 1; i > 0; i-- {
-        let j = Int(random(i))
-        swap(&array[j], &array[i])
-    }
-    return array
-}
-
-
 public func - <T: Equatable>(first: Array<T>, second: Array<T>) -> Array<T> {
     return first.minus(second)
 }
