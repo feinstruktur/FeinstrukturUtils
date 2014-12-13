@@ -28,4 +28,11 @@ class QueueTests: XCTestCase {
         XCTAssertNil(q.pop())
     }
     
+    func test_peek() {
+        let q = Queue<Int>(size: 3)
+        q.push(1)
+        XCTAssertEqual(q.peek()!, 1)
+        XCTAssertEqual(q.pop()!, 1)
+        XCTAssertNil(q.peek())
+    }
 }

@@ -31,4 +31,8 @@ public class Queue<T> {
             return nil
         }
     }
+    
+    public func peek() -> T? {
+        return self.data.first
+    }
 }
