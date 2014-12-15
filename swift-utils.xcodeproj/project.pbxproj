@@ -18,6 +18,8 @@
 		5A7AF3431A0E2E600048E07C /* InfiniteRandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */; };
 		5A7F260B1A3F035500219CB6 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F260A1A3F035500219CB6 /* Sequence.swift */; };
 		5A7F260D1A3F038800219CB6 /* SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F260C1A3F038800219CB6 /* SequenceTests.swift */; };
+		5A7F26191A3F383D00219CB6 /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F26181A3F383D00219CB6 /* Algorithms.swift */; };
+		5A7F261B1A3F386B00219CB6 /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F261A1A3F386B00219CB6 /* AlgorithmsTests.swift */; };
 		5A8447441A13B4D0006C9D92 /* AppInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */; };
 		5A8D220D1A3C6E4C009BE987 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D220C1A3C6E4C009BE987 /* Random.swift */; };
 		5A8D220F1A3C6EFD009BE987 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D220E1A3C6EFD009BE987 /* RandomTests.swift */; };
@@ -43,6 +45,8 @@
 		5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteRandomGenerator.swift; sourceTree = "<group>"; };
 		5A7F260A1A3F035500219CB6 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		5A7F260C1A3F038800219CB6 /* SequenceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTests.swift; sourceTree = "<group>"; };
+		5A7F26181A3F383D00219CB6 /* Algorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithms.swift; sourceTree = "<group>"; };
+		5A7F261A1A3F386B00219CB6 /* AlgorithmsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmsTests.swift; sourceTree = "<group>"; };
 		5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoTests.swift; sourceTree = "<group>"; };
 		5A8D220C1A3C6E4C009BE987 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		5A8D220E1A3C6EFD009BE987 /* RandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomTests.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		5A2D5BDA1A0A9BED005A238B = {
 			isa = PBXGroup;
 			children = (
+				5A7F26181A3F383D00219CB6 /* Algorithms.swift */,
 				5A2D5BEF1A0A9CDA005A238B /* AppInfo.swift */,
 				5A2D5BF31A0A9D37005A238B /* Array+utils.swift */,
 				5AABA5431A1F35C5005C33C9 /* Async.swift */,
@@ -94,6 +99,7 @@
 		5A2D5BE71A0A9CAC005A238B /* swift-utils-Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5A7F261A1A3F386B00219CB6 /* AlgorithmsTests.swift */,
 				5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */,
 				5A2D5BEA1A0A9CAC005A238B /* ArrayTests.swift */,
 				5AABA5451A1F35E2005C33C9 /* AsyncTests.swift */,
@@ -184,10 +190,12 @@
 			files = (
 				5A8D220F1A3C6EFD009BE987 /* RandomTests.swift in Sources */,
 				5A2D5BEB1A0A9CAC005A238B /* ArrayTests.swift in Sources */,
+				5A7F26191A3F383D00219CB6 /* Algorithms.swift in Sources */,
 				5A06DAF21A13CE0E00D5A417 /* Observer.swift in Sources */,
 				5A06DAF01A13CDF200D5A417 /* ObserverTests.swift in Sources */,
 				5A8D220D1A3C6E4C009BE987 /* Random.swift in Sources */,
 				5AABA54E1A1F3EFF005C33C9 /* XCTestCase+utils.swift in Sources */,
+				5A7F261B1A3F386B00219CB6 /* AlgorithmsTests.swift in Sources */,
 				5A8447441A13B4D0006C9D92 /* AppInfoTests.swift in Sources */,
 				5AABA5441A1F35C5005C33C9 /* Async.swift in Sources */,
 				5A7AF3431A0E2E600048E07C /* InfiniteRandomGenerator.swift in Sources */,
