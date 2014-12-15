@@ -14,6 +14,15 @@ public func - <T: Equatable>(first: Array<T>, second: Array<T>) -> Array<T> {
 }
 
 
+public func tail<T>(array: [T]) -> [T] {
+    if array.count > 0 {
+        return Array(array[1..<array.count])
+    } else {
+        return []
+    }
+}
+
+
 extension Array {
 
     func shuffled() -> Array {

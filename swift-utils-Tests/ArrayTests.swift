@@ -106,4 +106,10 @@ class ArrayTests: XCTestCase {
         XCTAssertEqual(a - ["0"], a)
     }
     
+    func test_tail() {
+        XCTAssertEqual(tail([0,1,2]), [1,2])
+        XCTAssertEqual(tail([0]), [])
+        XCTAssertEqual(tail([Int]()), [])
+    }
+    
 }
