@@ -34,3 +34,49 @@ public func shuffle<T>(var array: Array<T>) -> Array<T> {
 }
 
 
+func createHitmap(weights: [Double]) -> [Double] {
+    if weights.count > 1 {
+        let s = sum(weights)
+        assert(s >= 0, "sum of weights must be greater than zero")
+        var result = [weights[0]/s]
+        for index in 1..<weights.count-1 {
+            result.append(weights[index]/s + result[index-1])
+        }
+        return result
+    } else {
+        return []
+    }
+}
+
+
+func findBucket(hitmap: [Double], value: Double) -> Int {
+    var index = 0
+    while index < hitmap.count && value > hitmap[index] {
+        index++
+    }
+    return index
+}
+
+
+// If weights.count < array.count the last element of weights will be repeated to match the size of the array
+// If weights is empty it will be filled with 1.0
+// If weights.count > array.count it will be trimmed to array.count
+// Don't use weights that sum to less than or equal to zero
+public func randomElement<T>(array: [T], var weights: [Double] = [1.0]) -> T? {
+    if array.count > 0 {
+        if weights == [] {
+            weights = [1.0]
+        }
+        while weights.count < array.count {
+            weights.append(weights.last ?? 1.0)
+        }
+        if weights.count > array.count {
+            weights = Array(weights[0..<array.count])
+        }
+        assert(array.count == weights.count, "array size must equal weights size")
+        let index = findBucket(createHitmap(weights), random())
+        return array[index]
+    } else {
+        return nil
+    }
+}
