@@ -45,4 +45,14 @@ class QueueTests: XCTestCase {
         q.push(3)
         XCTAssertEqual(values, [1, 2])
     }
+    
+    func test_contains() {
+        let q = Queue<Int>(size: 3)
+        q.push(1)
+        q.push(2)
+        XCTAssert(q.contains(1))
+        XCTAssert(q.contains(2))
+        XCTAssertFalse(q.contains(3))
+    }
+    
 }

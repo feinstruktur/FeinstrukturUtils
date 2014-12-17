@@ -9,7 +9,8 @@
 import Foundation
 
 
-public class Queue<T> {
+public class Queue<T: Equatable> {
+    
     private var data = [T]()
     var size: Int
     
@@ -41,4 +42,9 @@ public class Queue<T> {
             return Array(self.data)
         }
     }
+    
+    public func contains(item: T) -> Bool {
+        return self.data.contains(item)
+    }
+    
 }
