@@ -106,4 +106,12 @@ extension Array {
         return result
     }
     
+    mutating func removeAtIndexes(indexes: [Int]) -> [T] {
+        var removed = [T]()
+        for index in indexes.sorted(>) {
+            removed.insert(self.removeAtIndex(index), atIndex: 0)
+        }
+        return removed
+    }
+    
 }

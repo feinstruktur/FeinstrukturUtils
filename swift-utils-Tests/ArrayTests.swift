@@ -112,4 +112,10 @@ class ArrayTests: XCTestCase {
         XCTAssertEqual(tail([Int]()), [])
     }
     
+    func test_remove_indexes() {
+        var a = ["0", "1", "2", "3", "4"]
+        XCTAssertEqual(a.removeAtIndexes([1,3]), ["1", "3"])
+        XCTAssertEqual(a, ["0", "2", "4"])
+    }
+    
 }
