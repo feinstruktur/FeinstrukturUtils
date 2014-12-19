@@ -22,6 +22,9 @@ public struct ParseConfig {
 }
 
 
+private var connected = false
+
+
 public class BaseDataStore {
     
     class func registerSubclasses() {
@@ -33,9 +36,13 @@ public class BaseDataStore {
         return ParseConfig(applicationId: "", clientKey: "")
     }
 
+    
     public class func connect(env: Environment) {
-        registerSubclasses()
-        configureParse(env)
+        if !connected {
+            registerSubclasses()
+            configureParse(env)
+            connected = true
+        }
     }
     
     class func configureParse(env: Environment) {
