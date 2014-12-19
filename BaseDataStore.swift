@@ -39,6 +39,7 @@ public class BaseDataStore {
     }
     
     class func configureParse(env: Environment) {
+        Parse.enableLocalDatastore()
         let config = parseConfig(env)
         Parse.setApplicationId(config.applicationId, clientKey: config.clientKey)
     }
