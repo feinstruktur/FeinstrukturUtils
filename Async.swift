@@ -9,6 +9,13 @@
 import Foundation
 
 
+func mainQueue(block: Void -> Void) {
+    NSOperationQueue.mainQueue().addOperationWithBlock {
+        block()
+    }
+}
+
+
 func blockFor(timeout: NSTimeInterval, until: () -> Bool) {
     let runLoopModes = [NSDefaultRunLoopMode, NSRunLoopCommonModes]
     let checkEveryInterval: NSTimeInterval = 0.01
