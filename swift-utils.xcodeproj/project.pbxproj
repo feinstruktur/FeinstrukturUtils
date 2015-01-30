@@ -21,6 +21,8 @@
 		5A7F26191A3F383D00219CB6 /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F26181A3F383D00219CB6 /* Algorithms.swift */; };
 		5A7F261B1A3F386B00219CB6 /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7F261A1A3F386B00219CB6 /* AlgorithmsTests.swift */; };
 		5A8447441A13B4D0006C9D92 /* AppInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */; };
+		5A8A772F1A7BE1440066D36E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8A772E1A7BE1440066D36E /* Result.swift */; };
+		5A8A77311A7BE15E0066D36E /* ResultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8A77301A7BE15E0066D36E /* ResultsTests.swift */; };
 		5A8D220D1A3C6E4C009BE987 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D220C1A3C6E4C009BE987 /* Random.swift */; };
 		5A8D220F1A3C6EFD009BE987 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D220E1A3C6EFD009BE987 /* RandomTests.swift */; };
 		5AABA5441A1F35C5005C33C9 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AABA5431A1F35C5005C33C9 /* Async.swift */; };
@@ -48,6 +50,8 @@
 		5A7F26181A3F383D00219CB6 /* Algorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithms.swift; sourceTree = "<group>"; };
 		5A7F261A1A3F386B00219CB6 /* AlgorithmsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmsTests.swift; sourceTree = "<group>"; };
 		5A8447431A13B4D0006C9D92 /* AppInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoTests.swift; sourceTree = "<group>"; };
+		5A8A772E1A7BE1440066D36E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		5A8A77301A7BE15E0066D36E /* ResultsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTests.swift; sourceTree = "<group>"; };
 		5A8D220C1A3C6E4C009BE987 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		5A8D220E1A3C6EFD009BE987 /* RandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomTests.swift; sourceTree = "<group>"; };
 		5AABA5431A1F35C5005C33C9 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				5A7AF3421A0E2E600048E07C /* InfiniteRandomGenerator.swift */,
 				5AC95D061A3C5475005CBA81 /* Queue.swift */,
 				5A8D220C1A3C6E4C009BE987 /* Random.swift */,
+				5A8A772E1A7BE1440066D36E /* Result.swift */,
 				5A7F260A1A3F035500219CB6 /* Sequence.swift */,
 				5A3322701A247CB60075AF75 /* String+utils.swift */,
 				5A06DAF11A13CE0E00D5A417 /* Observer.swift */,
@@ -107,6 +112,7 @@
 				5A06DAEF1A13CDF200D5A417 /* ObserverTests.swift */,
 				5AC95D041A3C5232005CBA81 /* QueueTests.swift */,
 				5A8D220E1A3C6EFD009BE987 /* RandomTests.swift */,
+				5A8A77301A7BE15E0066D36E /* ResultsTests.swift */,
 				5A7F260C1A3F038800219CB6 /* SequenceTests.swift */,
 				5A3322721A247CE20075AF75 /* StringTests.swift */,
 				5AABA54F1A1F3FA0005C33C9 /* XCTestCase+utilsTests.swift */,
@@ -198,9 +204,11 @@
 				5A7F261B1A3F386B00219CB6 /* AlgorithmsTests.swift in Sources */,
 				5A8447441A13B4D0006C9D92 /* AppInfoTests.swift in Sources */,
 				5AABA5441A1F35C5005C33C9 /* Async.swift in Sources */,
+				5A8A77311A7BE15E0066D36E /* ResultsTests.swift in Sources */,
 				5A7AF3431A0E2E600048E07C /* InfiniteRandomGenerator.swift in Sources */,
 				5AC95D051A3C5232005CBA81 /* QueueTests.swift in Sources */,
 				5A2D5BF11A0A9CDA005A238B /* AppInfo.swift in Sources */,
+				5A8A772F1A7BE1440066D36E /* Result.swift in Sources */,
 				5A3322711A247CB60075AF75 /* String+utils.swift in Sources */,
 				5AABA5501A1F3FA0005C33C9 /* XCTestCase+utilsTests.swift in Sources */,
 				5AC95D071A3C5475005CBA81 /* Queue.swift in Sources */,
