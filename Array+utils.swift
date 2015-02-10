@@ -32,7 +32,7 @@ extension Array {
     mutating func remove<U: Equatable>(itemToRemove: U) {
         let lastIndex = self.count - 1
         for (index, item) in enumerate(self.reverse()) {
-            if item as U == itemToRemove {
+            if item as! U == itemToRemove {
                 let indexFromStart = lastIndex - index
                 self.removeAtIndex(indexFromStart)
             }
