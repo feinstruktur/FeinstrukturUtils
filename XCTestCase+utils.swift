@@ -20,7 +20,7 @@ extension XCTestCase {
 
     
     // alternative implementation based on built-in expectations
-    func expectation(@autoclosure test: () -> Bool) -> XCTestCase {
+    func expectation(@autoclosure(escaping) test: () -> Bool) -> XCTestCase {
         let expectation = expectationWithDescription("")
         let checkEveryInterval: NSTimeInterval = 0.01
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
