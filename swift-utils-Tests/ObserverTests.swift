@@ -25,7 +25,7 @@ class ObserverTests: XCTestCase {
         
         let exp = self.expectationWithDescription("")
         let obs = Observer(observedObject: obj, keyPath: "attribute") { newValue in
-            XCTAssertEqual(newValue as String, "bar")
+            XCTAssertEqual(newValue as! String, "bar")
             exp.fulfill()
         }
         obj.attribute = "bar"

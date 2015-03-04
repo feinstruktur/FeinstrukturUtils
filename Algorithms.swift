@@ -11,7 +11,7 @@ import Foundation
 
 public protocol Addable {
     func +(lhs: Self, rhs: Self) -> Self
-    class func zero() -> Self
+    static func zero() -> Self
 }
 
 

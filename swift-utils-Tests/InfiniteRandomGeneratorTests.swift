@@ -24,7 +24,7 @@ class InfiniteRandomGeneratorTests: XCTestCase {
         XCTAssertEqual(randomItems.count, iterations*deckSize)
         items.each { (index, item) in
             let indexes = randomItems.indexes(item)
-            XCTAssertEqual(indexes.count, iterations, NSString(format: "fails for: %d", item))
+            XCTAssertEqual(indexes.count, iterations, "fails for: \(item)")
             // make sure all cards are at least half a deck apart (indexes are given in order)
             for i in 1..<indexes.count {
                 let distance = abs(indexes[i-1] - indexes[i])

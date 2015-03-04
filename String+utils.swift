@@ -19,7 +19,7 @@ extension String {
     public func split(separators: String) -> [String] {
         let separators = NSCharacterSet(charactersInString: separators)
         let parts = self.componentsSeparatedByCharactersInSet(separators)
-        return parts.filter { countElements($0) > 0 }
+        return parts.filter { count($0) > 0 }
     }
     
     
