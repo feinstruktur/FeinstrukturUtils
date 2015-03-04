@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A13C0631AA709FF000B0323 /* FeinstrukturUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A13C0581AA709FF000B0323 /* FeinstrukturUtils.framework */; };
-		5A13C0951AA70D7C000B0323 /* CoreGraphicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0941AA70D7C000B0323 /* CoreGraphicsTests.swift */; };
 		5A13C0BC1AA7492E000B0323 /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0AE1AA7492E000B0323 /* AlgorithmsTests.swift */; };
 		5A13C0BD1AA7492E000B0323 /* AppInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0AF1AA7492E000B0323 /* AppInfoTests.swift */; };
 		5A13C0BE1AA7492E000B0323 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0B01AA7492E000B0323 /* ArrayTests.swift */; };
@@ -63,7 +62,6 @@
 		5A13C05B1AA709FF000B0323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A13C0621AA709FF000B0323 /* FeinstrukturUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeinstrukturUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A13C0681AA709FF000B0323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A13C0941AA70D7C000B0323 /* CoreGraphicsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsTests.swift; sourceTree = "<group>"; };
 		5A13C0AE1AA7492E000B0323 /* AlgorithmsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmsTests.swift; sourceTree = "<group>"; };
 		5A13C0AF1AA7492E000B0323 /* AppInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoTests.swift; sourceTree = "<group>"; };
 		5A13C0B01AA7492E000B0323 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				5A13C0BA1AA7492E000B0323 /* StringTests.swift */,
 				5A13C0BB1AA7492E000B0323 /* XCTestCase+utilsTests.swift */,
 				5A13C0E61AA749B0000B0323 /* XCTestCase+utils.swift */,
-				5A13C0941AA70D7C000B0323 /* CoreGraphicsTests.swift */,
 				5A13C0671AA709FF000B0323 /* Supporting Files */,
 			);
 			path = FeinstrukturUtilsTests;
@@ -312,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A13C0951AA70D7C000B0323 /* CoreGraphicsTests.swift in Sources */,
 				5A13C0C81AA7492E000B0323 /* StringTests.swift in Sources */,
 				5A13C0EC1AA74A95000B0323 /* CoreGraphics+ext.swift in Sources */,
 				5A13C0EF1AA74A95000B0323 /* Queue.swift in Sources */,
