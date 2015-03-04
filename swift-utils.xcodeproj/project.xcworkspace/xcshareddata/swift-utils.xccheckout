@@ -12,6 +12,8 @@
 	<dict>
 		<key>4CF09C819BF741A1120167F4EA78232A22FEE502</key>
 		<string>/Users/sas/Dropbox/Projects/IndexCards</string>
+		<key>95438028B10BBB846574013D29F154A00556A9D1</key>
+		<string>github.com:Quick/Nimble.git</string>
 		<key>EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD</key>
 		<string>/Users/sas/Dropbox/Projects/feinstruktur-swift-utils.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>4CF09C819BF741A1120167F4EA78232A22FEE502</key>
 		<string>../../..</string>
+		<key>95438028B10BBB846574013D29F154A00556A9D1</key>
+		<string>../../../swift-utils/External/Nimble</string>
 		<key>EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD</key>
 		<string>../..</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD</string>
 			<key>IDESourceControlWCCName</key>
 			<string>feinstruktur-swift-utils</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>95438028B10BBB846574013D29F154A00556A9D1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Nimble</string>
 		</dict>
 	</array>
 </dict>

@@ -8,11 +8,13 @@
 
 import UIKit
 import XCTest
+import Nimble
+
 
 class CoreGraphicsTests: XCTestCase {
 
     func testAddition() {
-        XCTAssertEqual(CGPoint(x: 1, y: 2) + CGPoint(x: 2, y: 3), CGPoint(x: 3, y: 5))
+        expect(CGPoint(x: 1, y: 2) + CGPoint(x: 2, y: 3)) == CGPoint(x: 3, y: 5)
     }
     
 }
