@@ -23,9 +23,9 @@ class RandomTests: XCTestCase {
             maximum = max(maximum, r)
             mean += Double(r)
         }
-        mean /= Double(n)
         XCTAssertEqual(minimum, UInt32(0))
         XCTAssertEqual(maximum, inclusiveMaxValue)
+        mean /= Double(n)
         XCTAssertEqualWithAccuracy(mean, 5.0, 0.01)
     }
     
@@ -40,9 +40,9 @@ class RandomTests: XCTestCase {
             maximum = max(maximum, r)
             mean += r
         }
-        mean /= Double(n)
         XCTAssertEqualWithAccuracy(minimum, 0, 0.01)
         XCTAssertEqualWithAccuracy(maximum, 1, 0.01)
+        mean /= Double(n)
         XCTAssertEqualWithAccuracy(mean, 0.5, 0.01)
     }
     
@@ -108,4 +108,5 @@ class RandomTests: XCTestCase {
     func test_randomElement_empty() {
         XCTAssertNil(randomElement([Int]()))
     }
+
 }
