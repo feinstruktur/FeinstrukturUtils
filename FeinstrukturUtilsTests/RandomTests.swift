@@ -8,6 +8,8 @@
 
 import UIKit
 import XCTest
+import Nimble
+
 
 class RandomTests: XCTestCase {
 
@@ -27,6 +29,10 @@ class RandomTests: XCTestCase {
         XCTAssertEqual(maximum, inclusiveMaxValue)
         mean /= Double(n)
         XCTAssertEqualWithAccuracy(mean, 5.0, 0.01)
+        
+        expect(minimum) == 0
+        expect(maximum) == inclusiveMaxValue
+        expect(mean) == 5.0 ± 0.01
     }
     
     func test_random_Double() {
