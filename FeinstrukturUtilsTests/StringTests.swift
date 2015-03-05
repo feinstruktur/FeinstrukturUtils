@@ -8,30 +8,32 @@
 
 import UIKit
 import XCTest
+import Nimble
+
 
 class StringTests: XCTestCase {
 
     func test_split() {
         let s = "a, b,c\td"
-        XCTAssertEqual(s.split(), ["a", "b", "c", "d"])
+        expect(s.split()) == ["a", "b", "c", "d"]
     }
     
     
     func test_split_empty() {
         let s = ""
-        XCTAssertEqual(s.split(), [])
+        expect(s.split()) == []
     }
     
     
     func test_split_dash() {
-        XCTAssertEqual("a-b".split("-"), ["a", "b"])
-        XCTAssertEqual("ab".split("-"), ["ab"])
+        expect("a-b".split("-")) == ["a", "b"]
+        expect("ab".split("-")) == ["ab"]
     }
     
     
     func test_urlEncode() {
         let s = "!*'();:@&=+$,/?%#[]"
-        XCTAssertEqual(s.urlEncode()!, "!*'();:@&=+$,/?%25%23%5B%5D")
+        expect(s.urlEncode()!) == "!*'();:@&=+$,/?%25%23%5B%5D"
     }
     
 }

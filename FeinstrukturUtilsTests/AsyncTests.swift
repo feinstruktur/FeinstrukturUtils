@@ -8,6 +8,8 @@
 
 import UIKit
 import XCTest
+import Nimble
+
 
 class AsyncTests: XCTestCase {
 
@@ -20,8 +22,8 @@ class AsyncTests: XCTestCase {
             return true
         }
         let elapsed = NSDate().timeIntervalSinceDate(start)
-        XCTAssert(elapsed < timeout)
-        XCTAssert(fired)
+        expect(elapsed) < timeout
+        expect(fired) == true
     }
 
     
@@ -34,8 +36,8 @@ class AsyncTests: XCTestCase {
             return false
         }
         let elapsed = NSDate().timeIntervalSinceDate(start)
-        XCTAssert(elapsed >= timeout)
-        XCTAssert(fired)
+        expect(elapsed) >= timeout
+        expect(fired) == true
     }
 
 }

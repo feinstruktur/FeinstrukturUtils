@@ -25,14 +25,10 @@ class RandomTests: XCTestCase {
             maximum = max(maximum, r)
             mean += Double(r)
         }
-        XCTAssertEqual(minimum, UInt32(0))
-        XCTAssertEqual(maximum, inclusiveMaxValue)
-        mean /= Double(n)
-        XCTAssertEqualWithAccuracy(mean, 5.0, 0.01)
-        
         expect(minimum) == 0
         expect(maximum) == inclusiveMaxValue
-        expect(mean) == 5.0 ± 0.01
+        mean /= Double(n)
+        expect(mean) == 5 ± 0.01
     }
     
     func test_random_Double() {
@@ -46,10 +42,10 @@ class RandomTests: XCTestCase {
             maximum = max(maximum, r)
             mean += r
         }
-        XCTAssertEqualWithAccuracy(minimum, 0, 0.01)
-        XCTAssertEqualWithAccuracy(maximum, 1, 0.01)
+        expect(minimum) == 0 ± 0.01
+        expect(maximum) == 1 ± 0.01
         mean /= Double(n)
-        XCTAssertEqualWithAccuracy(mean, 0.5, 0.01)
+        expect(mean) == 0.5 ± 0.01
     }
     
     func test_shuffled() {
@@ -57,28 +53,27 @@ class RandomTests: XCTestCase {
         for i in 0..<1000 {
             a.append(i)
         }
-        XCTAssertNotEqual(a, a.shuffled())
-        XCTAssertNotEqual(a.shuffled(), a.shuffled())
+        expect(a) != a.shuffled()
+        expect(a.shuffled()) != a.shuffled()
     }
     
     func test_createHitmap() {
-        XCTAssertEqual(createHitmap([1, 1, 1, 1]), [0.25, 0.5, 0.75])
-        XCTAssertEqual(createHitmap([3, 1]), [0.75])
-        XCTAssertEqual(createHitmap([2, 1, 2])[0], 0.4)
-        XCTAssertEqualWithAccuracy(createHitmap([2, 1, 2])[1], 0.6, 0.01)
-        XCTAssertEqual(createHitmap([1]), [])
-        XCTAssertEqual(createHitmap([]), [])
+        expect(createHitmap([1, 1, 1, 1])) ≈ [0.25, 0.5, 0.75]
+        expect(createHitmap([3, 1])) ≈ [0.75]
+        expect(createHitmap([2, 1, 2])) ≈ [0.4, 0.6]
+        expect(createHitmap([1])) == []
+        expect(createHitmap([])) == []
     }
     
     func test_findBucket() {
-        XCTAssertEqual(findBucket([0.25, 0.5, 0.75], 0.0), 0)
-        XCTAssertEqual(findBucket([0.25, 0.5, 0.75], 0.2), 0)
-        XCTAssertEqual(findBucket([0.25, 0.5, 0.75], 0.25), 0)
-        XCTAssertEqual(findBucket([0.25, 0.5, 0.75], 0.3), 1)
-        XCTAssertEqual(findBucket([0.25, 0.5, 0.75], 0.6), 2)
-        XCTAssertEqual(findBucket([0.25, 0.5, 0.75], 0.8), 3)
-        XCTAssertEqual(findBucket([0.25, 0.5, 0.75], 1.2), 3)
-        XCTAssertEqual(findBucket([], 0), 0)
+        expect(findBucket([0.25, 0.5, 0.75], 0.0)) == 0
+        expect(findBucket([0.25, 0.5, 0.75], 0.2)) == 0
+        expect(findBucket([0.25, 0.5, 0.75], 0.25)) == 0
+        expect(findBucket([0.25, 0.5, 0.75], 0.3)) == 1
+        expect(findBucket([0.25, 0.5, 0.75], 0.6)) == 2
+        expect(findBucket([0.25, 0.5, 0.75], 0.8)) == 3
+        expect(findBucket([0.25, 0.5, 0.75], 1.2)) == 3
+        expect(findBucket([], 0)) == 0
     }
 
     
@@ -91,12 +86,12 @@ class RandomTests: XCTestCase {
             let i = findBucket(hitmap, random())
             counts[i]++
         }
-        XCTAssertEqual(sum(counts), n)
-        XCTAssertEqualWithAccuracy(Double(counts[0])/Double(n), 0.10, 0.02)
-        XCTAssertEqualWithAccuracy(Double(counts[1])/Double(n), 0.20, 0.02)
-        XCTAssertEqualWithAccuracy(Double(counts[2])/Double(n), 0.10, 0.02)
-        XCTAssertEqualWithAccuracy(Double(counts[3])/Double(n), 0.40, 0.02)
-        XCTAssertEqualWithAccuracy(Double(counts[4])/Double(n), 0.20, 0.02)
+        expect(sum(counts)) == n
+        expect(Double(counts[0])/Double(n)) == 0.10 ± 0.02
+        expect(Double(counts[1])/Double(n)) == 0.20 ± 0.02
+        expect(Double(counts[2])/Double(n)) == 0.10 ± 0.02
+        expect(Double(counts[3])/Double(n)) == 0.40 ± 0.02
+        expect(Double(counts[4])/Double(n)) == 0.20 ± 0.02
     }
 
     func test_randomElement() {
@@ -108,11 +103,11 @@ class RandomTests: XCTestCase {
             let i = randomElement([0, 1, 2, 3, 4])!
             counts[i]++
         }
-        XCTAssertEqual(sum(counts), n)
+        expect(sum(counts)) == n
     }
     
     func test_randomElement_empty() {
-        XCTAssertNil(randomElement([Int]()))
+        expect(randomElement([Int]())).to(beNil())
     }
 
 }

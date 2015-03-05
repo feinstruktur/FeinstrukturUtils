@@ -8,12 +8,13 @@
 
 import UIKit
 import XCTest
+import Nimble
 
 
 class AppInfoTests: XCTestCase {
 
     func test_versionString() {
-        XCTAssertNotNil(AppInfo.versionString())
+        expect(AppInfo.versionString()).toNot(beNil())
     }
 
 }

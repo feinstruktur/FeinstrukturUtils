@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Nimble
 
 
 class QueueTests: XCTestCase {
@@ -22,18 +23,18 @@ class QueueTests: XCTestCase {
         q.push(2)
         q.push(3)
         q.push(4)
-        XCTAssertEqual(q.pop()!, 2)
-        XCTAssertEqual(q.pop()!, 3)
-        XCTAssertEqual(q.pop()!, 4)
-        XCTAssertNil(q.pop())
+        expect(q.pop()!) == 2
+        expect(q.pop()!) == 3
+        expect(q.pop()!) == 4
+        expect(q.pop()).to(beNil())
     }
     
     func test_peek() {
         let q = Queue<Int>(size: 3)
         q.push(1)
-        XCTAssertEqual(q.peek()!, 1)
-        XCTAssertEqual(q.pop()!, 1)
-        XCTAssertNil(q.peek())
+        expect(q.peek()!) == 1
+        expect(q.pop()!) == 1
+        expect(q.peek()).to(beNil())
     }
     
     func test_values() {
@@ -41,18 +42,18 @@ class QueueTests: XCTestCase {
         q.push(1)
         q.push(2)
         let values = q.values
-        XCTAssertEqual(values, [1, 2])
+        expect(values) == [1, 2]
         q.push(3)
-        XCTAssertEqual(values, [1, 2])
+        expect(values) == [1, 2]
     }
     
     func test_contains() {
         let q = Queue<Int>(size: 3)
         q.push(1)
         q.push(2)
-        XCTAssert(q.contains(1))
-        XCTAssert(q.contains(2))
-        XCTAssertFalse(q.contains(3))
+        expect(q.contains(1)) == true
+        expect(q.contains(2)) == true
+        expect(q.contains(3)) == false
     }
     
 }

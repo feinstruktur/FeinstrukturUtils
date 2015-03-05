@@ -8,27 +8,28 @@
 
 import UIKit
 import XCTest
+import Nimble
 
 class ResultsTests: XCTestCase {
 
     func test_init_succeeded_failed() {
-        XCTAssertTrue(Result<String>("foo").succeeded)
-        XCTAssertFalse(Result<String>("foo").failed)
-        XCTAssertFalse(Result<String>(NSError()).succeeded)
-        XCTAssertTrue(Result<String>(NSError()).failed)
+        expect(Result<String>("foo").succeeded) == true
+        expect(Result<String>("foo").failed) == false
+        expect(Result<String>(NSError()).succeeded) == false
+        expect(Result<String>(NSError()).failed) == true
     }
 
     
     func test_value() {
-        XCTAssertEqual(Result<String>("foo").value!, "foo")
-        XCTAssertNil(Result<String>(NSError()).value)
+        expect(Result<String>("foo").value!) == "foo"
+        expect(Result<String>(NSError()).value).to(beNil())
     }
 
 
     func test_error() {
         let error = NSError()
-        XCTAssertEqual(Result<String>(error).error!, error)
-        XCTAssertNil(Result<String>("foo").error)
+        expect(Result<String>(error).error! == error) == true
+        expect(Result<String>("foo").error).to(beNil())
     }
     
     
@@ -37,8 +38,8 @@ class ResultsTests: XCTestCase {
     func test_idempotence() {
         var v: Int = 0
         var r = Result(v++)
-        XCTAssertEqual(r.value!, 0)
-        XCTAssertEqual(r.value!, 0)
+        expect(r.value!) == 0
+        expect(r.value!) == 0
     }
     
 }

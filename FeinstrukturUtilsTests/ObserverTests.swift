@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Nimble
 
 
 class TestObject: NSObject {
@@ -23,13 +24,13 @@ class ObserverTests: XCTestCase {
         let obj = TestObject()
         obj.attribute = "foo"
         
-        let exp = self.expectationWithDescription("")
-        let obs = Observer(observedObject: obj, keyPath: "attribute") { newValue in
-            XCTAssertEqual(newValue as! String, "bar")
-            exp.fulfill()
+        waitUntil { done in
+            let obs = Observer(observedObject: obj, keyPath: "attribute") { newValue in
+                expect(newValue as? String) == "bar"
+                done()
+            }
+            obj.attribute = "bar"
         }
-        obj.attribute = "bar"
-        self.waitForExpectationsWithTimeout(5, handler: nil)
     }
 
 }

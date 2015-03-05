@@ -8,18 +8,19 @@
 
 import UIKit
 import XCTest
+import Nimble
 
 
 class AlgorithmsTests: XCTestCase {
 
     func test_sum() {
         let s = sum([0,1,2])
-        XCTAssertEqual(s, 3)
+        expect(s) == 3
     }
     
     func test_sum_empty() {
         let s = sum([Int]())
-        XCTAssertEqual(s, 0)
+        expect(s) == 0
     }
     
 }

@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Nimble
 
 
 class InfiniteRandomGeneratorTests: XCTestCase {
@@ -21,28 +22,30 @@ class InfiniteRandomGeneratorTests: XCTestCase {
         for i in 0..<iterations*deckSize {
             randomItems.append(dealer.next()!)
         }
-        XCTAssertEqual(randomItems.count, iterations*deckSize)
+
+        expect(randomItems.count) == iterations * deckSize
+        
         items.each { (index, item) in
             let indexes = randomItems.indexes(item)
-            XCTAssertEqual(indexes.count, iterations, "fails for: \(item)")
+            expect(indexes.count) == iterations
             // make sure all cards are at least half a deck apart (indexes are given in order)
             for i in 1..<indexes.count {
                 let distance = abs(indexes[i-1] - indexes[i])
-                XCTAssert(distance > items.count/2)
+                expect(distance) > items.count / 2
             }
         }
     }
     
     func test_next_empty() {
         var dealer = InfiniteRandomGenerator<Int>(array: [Int]())
-        XCTAssertNil(dealer.next())
+        expect(dealer.next()).to(beNil())
     }
 
     func test_next_one() {
         var dealer = InfiniteRandomGenerator<Int>(array: [1])
-        XCTAssertEqual(dealer.next()!, 1)
-        XCTAssertEqual(dealer.next()!, 1)
-        XCTAssertEqual(dealer.next()!, 1)
+        expect(dealer.next()!) == 1
+        expect(dealer.next()!) == 1
+        expect(dealer.next()!) == 1
     }
     
     func test_next_two() {
@@ -54,12 +57,12 @@ class InfiniteRandomGeneratorTests: XCTestCase {
             if firstValue == 1 {
                 firstValueIsZero++
             }
-            XCTAssertEqual(dealer.next()!, (firstValue + 1) % 2)
-            XCTAssertEqual(dealer.next()!, firstValue)
-            XCTAssertEqual(dealer.next()!, (firstValue + 1) % 2)
-            XCTAssertEqual(dealer.next()!, firstValue)
+            expect(dealer.next()!) == (firstValue + 1) % 2
+            expect(dealer.next()!) == firstValue
+            expect(dealer.next()!) == (firstValue + 1) % 2
+            expect(dealer.next()!) == firstValue
         }
-        XCTAssertEqualWithAccuracy(firstValueIsZero/Double(iterations), 0.5, 0.05)
+        expect(firstValueIsZero/Double(iterations)) == 0.5 ± 0.05
     }
     
 }

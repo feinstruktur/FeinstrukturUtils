@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Nimble
 
 
 class XCTestCase_utilsTests: XCTestCase {
@@ -24,8 +25,8 @@ class XCTestCase_utilsTests: XCTestCase {
         }
         let elapsed = NSDate().timeIntervalSinceDate(start)
         // elapsed should be a little larger than 0.1
-        XCTAssert(elapsed >= 0.1)
-        XCTAssert(elapsed < 0.4)
+        expect(elapsed) >= 0.1
+        expect(elapsed) < 0.4
     }
 
     func test_waitWithTimeout_negative() {
@@ -40,8 +41,8 @@ class XCTestCase_utilsTests: XCTestCase {
         }
         let elapsed = NSDate().timeIntervalSinceDate(start)
         // elapsed should be a little larger than 0.1
-        XCTAssert(elapsed >= 0.1)
-        XCTAssert(elapsed < 0.4)
+        expect(elapsed) >= 0.1
+        expect(elapsed) < 0.4
     }
     
 }

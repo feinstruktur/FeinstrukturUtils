@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Nimble
 
 
 struct Fibonacci: SequenceType {
@@ -26,10 +27,10 @@ struct Fibonacci: SequenceType {
 
 class SequenceTests: XCTestCase {
 
-    func test_sequence() {
+    func test_take() {
         let source = SequenceOf(Fibonacci())
-        XCTAssertEqual(Array(source.take(8)), [0, 1, 1, 2, 3, 5, 8, 13])
-        XCTAssertEqual(Array(source.take(0)), [])
+        expect(Array(source.take(8))) == [0, 1, 1, 2, 3, 5, 8, 13]
+        expect(Array(source.take(0))) == []
     }
     
 }
