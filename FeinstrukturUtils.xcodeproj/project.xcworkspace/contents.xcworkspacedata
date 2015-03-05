@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:swift-utils.xcodeproj">
+      location = "self:FeinstrukturUtils.xcodeproj">
    </FileRef>
 </Workspace>
