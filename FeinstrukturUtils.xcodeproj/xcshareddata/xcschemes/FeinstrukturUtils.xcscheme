@@ -17,7 +17,7 @@
                BlueprintIdentifier = "5A13C0571AA709FF000B0323"
                BuildableName = "FeinstrukturUtils.framework"
                BlueprintName = "FeinstrukturUtils"
-               ReferencedContainer = "container:swift-utils.xcodeproj">
+               ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "5A13C0611AA709FF000B0323"
                BuildableName = "FeinstrukturUtilsTests.xctest"
                BlueprintName = "FeinstrukturUtilsTests"
-               ReferencedContainer = "container:swift-utils.xcodeproj">
+               ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "5A13C0611AA709FF000B0323"
                BuildableName = "FeinstrukturUtilsTests.xctest"
                BlueprintName = "FeinstrukturUtilsTests"
-               ReferencedContainer = "container:swift-utils.xcodeproj">
+               ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "5A13C0571AA709FF000B0323"
             BuildableName = "FeinstrukturUtils.framework"
             BlueprintName = "FeinstrukturUtils"
-            ReferencedContainer = "container:swift-utils.xcodeproj">
+            ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "5A13C0571AA709FF000B0323"
             BuildableName = "FeinstrukturUtils.framework"
             BlueprintName = "FeinstrukturUtils"
-            ReferencedContainer = "container:swift-utils.xcodeproj">
+            ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -96,7 +96,7 @@
             BlueprintIdentifier = "5A13C0571AA709FF000B0323"
             BuildableName = "FeinstrukturUtils.framework"
             BlueprintName = "FeinstrukturUtils"
-            ReferencedContainer = "container:swift-utils.xcodeproj">
+            ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
