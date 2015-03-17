@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>95438028B10BBB846574013D29F154A00556A9D1</key>
-		<string>../..External/Nimble/</string>
+		<string>../..External/Nimble</string>
 		<key>EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD</key>
 		<string>../..</string>
 	</dict>
