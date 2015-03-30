@@ -14,7 +14,7 @@ public class Queue<T: Equatable> {
     private var data = [T]()
     var size: Int
     
-    init(size: Int) {
+    public init(size: Int) {
         self.size = size
     }
     
