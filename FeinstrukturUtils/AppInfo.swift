@@ -8,13 +8,13 @@
 
 import Foundation
 
-class AppInfo {
+public class AppInfo {
     
-    class func runningTests() -> Bool {
+    public class func runningTests() -> Bool {
         return (getenv("UNIT_TESTS") != nil)
     }
     
-    class func versionString() -> String? {
+    public class func versionString() -> String? {
         return NSBundle(forClass: self).infoDictionary?["CFBundleVersion"] as? String
     }
     
