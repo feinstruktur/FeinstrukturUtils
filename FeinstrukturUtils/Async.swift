@@ -9,14 +9,14 @@
 import Foundation
 
 
-func mainQueue(block: Void -> Void) {
+public func mainQueue(block: Void -> Void) {
     NSOperationQueue.mainQueue().addOperationWithBlock {
         block()
     }
 }
 
 
-func blockFor(timeout: NSTimeInterval, until: () -> Bool) {
+public func blockFor(timeout: NSTimeInterval, until: () -> Bool) {
     let runLoopModes = [NSDefaultRunLoopMode, NSRunLoopCommonModes]
     let checkEveryInterval: NSTimeInterval = 0.01
     let runUntilDate = NSDate(timeIntervalSinceNow: timeout)
@@ -53,10 +53,10 @@ func blockFor(timeout: NSTimeInterval, until: () -> Bool) {
 // Ref: http://sebastienthiebaud.us/blog/ios/gcd/block/2014/04/09/diggint-into-gcd-1-cancel-dispatch-after.html
 //
 
-typealias dispatch_cancelable_closure = (cancel : Bool) -> ()
+public typealias dispatch_cancelable_closure = (cancel : Bool) -> ()
 
 
-func delay(time:NSTimeInterval, closure:()->()) ->  dispatch_cancelable_closure? {
+public func delay(time:NSTimeInterval, closure:()->()) ->  dispatch_cancelable_closure? {
     
     func dispatch_later(clsr:()->()) {
         dispatch_after(
@@ -91,7 +91,7 @@ func delay(time:NSTimeInterval, closure:()->()) ->  dispatch_cancelable_closure?
     return cancelableClosure;
 }
 
-func cancel_delay(closure:dispatch_cancelable_closure?) {
+public func cancel_delay(closure:dispatch_cancelable_closure?) {
     
     if closure != nil {
         closure!(cancel: true)
