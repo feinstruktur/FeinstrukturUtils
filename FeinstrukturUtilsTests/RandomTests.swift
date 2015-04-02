@@ -48,6 +48,27 @@ class RandomTests: XCTestCase {
         expect(mean) == 0.5 ± 0.01
     }
     
+    func test_random_from_to() {
+        let n = 1_000_000
+        let from = 3.0
+        let to = 7.0
+        var minimum = to
+        var maximum = from
+        var mean: Double = 0
+        for i in 0..<n {
+            let r = random(from, to)
+            minimum = min(minimum, r)
+            maximum = max(maximum, r)
+            mean += r
+        }
+        expect(minimum) == 3 ± 0.01
+        expect(maximum) == 7 ± 0.01
+        expect(minimum) >= from
+        expect(maximum) < to
+        mean /= Double(n)
+        expect(mean) == 5.0 ± 0.01
+    }
+    
     func test_shuffled() {
         var a = [Int]()
         for i in 0..<1000 {

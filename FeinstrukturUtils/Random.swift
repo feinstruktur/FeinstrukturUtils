@@ -24,6 +24,13 @@ public func random() -> Double {
 }
 
 
+// Uniform randum number from [a, b[, where b >= a
+public func random(from: Double, to: Double) -> Double {
+    assert(to >= from, "upper bound must be greater than or equal to lower bound")
+    return from + (to-from) * random()
+}
+
+
 // Fisher-Yates (aka Knuth) Shuffle
 public func shuffle<T>(var array: Array<T>) -> Array<T> {
     for var i = array.count - 1; i > 0; i-- {
