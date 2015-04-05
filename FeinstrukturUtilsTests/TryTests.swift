@@ -11,33 +11,6 @@ import XCTest
 import Nimble
 
 
-func try(block: NSErrorPointer -> Void) -> NSError? {
-    var error: NSError?
-    block(&error)
-    return error
-}
-
-func try2<T>(block: NSErrorPointer -> T) -> Result<T> {
-    var error: NSError?
-    let res = block(&error)
-    if error == nil {
-        return Result(res)
-    } else {
-        return Result(error!)
-    }
-}
-
-// TODO: enable once API is settled
-// specialisation for Bool, because Bool return values signal stronger than NSError (for example in Core Data)
-//func try2(block: NSErrorPointer -> Bool) -> Result<Bool> {
-//    var error: NSError?
-//    let res = block(&error)
-//    if res {
-//        return Result(res)
-//    } else {
-//        return Result(error!)
-//    }
-//}
 
 enum Param {
     case Good, Bad
@@ -90,13 +63,13 @@ class TryCatchTests: XCTestCase {
         
         // short circuit versions
         
-        if let res = try2({ error in doSomething2(.Good, error) }).value {
+        if let res = try({ error in doSomething2(.Good, error) }).value {
             expect(res) == "Success"
         } else {
             fail()
         }
 
-        if let res = try2({ error in doSomething2(.Bad, error) }).value {
+        if let res = try({ error in doSomething2(.Bad, error) }).value {
             fail()
         } else {
             expect(true)
@@ -104,14 +77,14 @@ class TryCatchTests: XCTestCase {
 
         // long versions
         
-        switch try2({ error in doSomething(.Good, error) }) {
+        switch try({ error in doSomething(.Good, error) }) {
         case .Success(let value):
             expect(value.unbox) == true
         case .Failure(let error):
             expect(error.code) == 42
         }
 
-        switch try2({ error in doSomething(.Bad, error) }) {
+        switch try({ error in doSomething(.Bad, error) }) {
         case .Success(let value):
             expect(value.unbox) == true
         case .Failure(let error):
