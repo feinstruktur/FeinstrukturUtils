@@ -35,6 +35,7 @@
 		5A5755341AD165DD009D1775 /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755331AD165DD009D1775 /* Try.swift */; };
 		5A5755351AD165DD009D1775 /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755331AD165DD009D1775 /* Try.swift */; };
 		5A5755441AD3DFEF009D1775 /* FSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755431AD3DFEF009D1775 /* FSButton.swift */; };
+		5A5755481AD3E1C7009D1775 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755471AD3E1C7009D1775 /* Utils.swift */; };
 		5A93FA901AB81965004D2A0D /* TryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FA8F1AB81965004D2A0D /* TryTests.swift */; };
 		5A9487B41AA782C3003559BE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9487AD1AA782B7003559BE /* Nimble.framework */; };
 		5A9487BF1AA86492003559BE /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0AE1AA7492E000B0323 /* AlgorithmsTests.swift */; };
@@ -124,6 +125,7 @@
 		5A13C0E61AA749B0000B0323 /* XCTestCase+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+utils.swift"; sourceTree = "<group>"; };
 		5A5755331AD165DD009D1775 /* Try.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Try.swift; sourceTree = "<group>"; };
 		5A5755431AD3DFEF009D1775 /* FSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSButton.swift; sourceTree = "<group>"; };
+		5A5755471AD3E1C7009D1775 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5A93FA8F1AB81965004D2A0D /* TryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryTests.swift; sourceTree = "<group>"; };
 		5A9487A51AA782B7003559BE /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = External/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				5A5755431AD3DFEF009D1775 /* FSButton.swift */,
+				5A5755471AD3E1C7009D1775 /* Utils.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				5A13C0E41AA749A4000B0323 /* Sequence.swift in Sources */,
 				5A13C0E21AA749A4000B0323 /* Random.swift in Sources */,
 				5A13C0DB1AA749A4000B0323 /* Async.swift in Sources */,
+				5A5755481AD3E1C7009D1775 /* Utils.swift in Sources */,
 				5A5755341AD165DD009D1775 /* Try.swift in Sources */,
 				5A13C0DA1AA749A4000B0323 /* Array+utils.swift in Sources */,
 				5A13C0D81AA749A4000B0323 /* Algorithms.swift in Sources */,
