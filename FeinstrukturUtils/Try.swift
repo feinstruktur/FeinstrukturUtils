@@ -9,13 +9,13 @@
 import Foundation
 
 
-func try(block: NSErrorPointer -> Void) -> NSError? {
+public func try(block: NSErrorPointer -> Void) -> NSError? {
     var error: NSError?
     block(&error)
     return error
 }
 
-func try<T>(block: NSErrorPointer -> T) -> Result<T> {
+public func try<T>(block: NSErrorPointer -> T) -> Result<T> {
     var error: NSError?
     let res = block(&error)
     if error == nil {
@@ -26,7 +26,7 @@ func try<T>(block: NSErrorPointer -> T) -> Result<T> {
 }
 
 // specialisation for Bool, because Bool return values signal stronger than NSError (for example in Core Data)
-func try(block: NSErrorPointer -> Bool) -> Result<Bool> {
+public func try(block: NSErrorPointer -> Bool) -> Result<Bool> {
     var error: NSError?
     let res = block(&error)
     if res {
