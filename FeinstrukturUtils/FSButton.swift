@@ -70,62 +70,62 @@ extension CATextLayer {
 @IBDesignable
 public class FSButton: UIControl {
     
-    @IBInspectable var text: String = DefaultText {
+    @IBInspectable public var text: String = DefaultText {
         didSet {
             self.textLayer.string = text
             self.updateLayers()
         }
     }
 
-    @IBInspectable var fontSize: CGFloat = DefaultFontSize {
+    @IBInspectable public var fontSize: CGFloat = DefaultFontSize {
         didSet {
             self.textLayer.fontSize = fontSize
             self.updateLayers()
         }
     }
     
-    @IBInspectable var fontName: String = DefaultFontName {
+    @IBInspectable public var fontName: String = DefaultFontName {
         didSet {
             self.textLayer.font = fontName
             self.updateLayers()
         }
     }
     
-    @IBInspectable var textColor: UIColor = DefaultTextColor {
+    @IBInspectable public var textColor: UIColor = DefaultTextColor {
         didSet {
             self.textLayer.foregroundColor = textColor.CGColor
             self.updateLayers()
         }
     }
     
-    @IBInspectable var fillColor: UIColor = DefaultFillColor {
+    @IBInspectable public var fillColor: UIColor = DefaultFillColor {
         didSet {
             self.mainLayer.fillColor = fillColor.CGColor
             self.updateLayers()
         }
     }
     
-    @IBInspectable var borderColor: UIColor = DefaultBorderColor {
+    @IBInspectable public var borderColor: UIColor = DefaultBorderColor {
         didSet {
             self.mainLayer.strokeColor = borderColor.CGColor
             self.updateLayers()
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat = DefaultBorderWidth {
+    @IBInspectable public var borderWidth: CGFloat = DefaultBorderWidth {
         didSet {
             self.mainLayer.lineWidth = borderWidth
             self.updateLayers()
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat = DefaultCornerRadius {
+    @IBInspectable public var cornerRadius: CGFloat = DefaultCornerRadius {
         didSet {
             self.updateLayers()
         }
     }
     
-    @IBInspectable var pinned: Bool = true
+    @IBInspectable public var pinned: Bool = true
     
     let mainLayer = CAShapeLayer()
     let textLayer = CATextLayer()
@@ -150,7 +150,7 @@ public class FSButton: UIControl {
         }
     }
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         self.setup()
     }
