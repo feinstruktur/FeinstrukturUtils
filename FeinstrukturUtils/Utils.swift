@@ -1,36 +1,28 @@
 //
 //  Utils.swift
-//  Fradio
+//  FeinstrukturUtils
 //
-//  Created by Sven A. Schmidt on 19/03/2015.
-//  Copyright (c) 2015 feinstruktur. All rights reserved.
+//  Created by Sven Schmidt on 10/04/2015.
+//
 //
 
-import UIKit
+import Foundation
 
 
-public func showAlertWithMessage(message: String) {
-    let alert = UIAlertView(title: "Error", message: message, delegate: nil, cancelButtonTitle: "Damn!")
-    alert.show()
+// Simple timing function, printing the time spent running the block. Use this to wrap a method with a return value.
+public func time<T>(label: String, block: Void -> T) -> T {
+    let start = NSDate()
+    let res = block()
+    let elapsed = NSDate().timeIntervalSinceDate(start)
+    NSLog("\(label): %@", NSString(format: "%.2f", elapsed))
+    return res
 }
 
 
-public func showAlertWithError(error: NSError) {
-    showAlertWithMessage("Well, that didn't work: \(error.localizedDescription)")
+// Simple timing function, printing the time spent running the block (without return value).
+public func time(label: String, block: Void -> Void) {
+    let start = NSDate()
+    block()
+    let elapsed = NSDate().timeIntervalSinceDate(start)
+    NSLog("\(label): %@", NSString(format: "%.2f", elapsed))
 }
-
-
-extension UITextView {
-    
-    public func append(text: String) {
-        let current = self.text
-        if current == "" {
-            self.text = text
-        } else {
-            self.text = text + "\n" + current
-        }
-    }
-    
-}
-
-
