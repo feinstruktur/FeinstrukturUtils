@@ -922,6 +922,7 @@
 				5AD1E8451AE2A0A70017CEEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
