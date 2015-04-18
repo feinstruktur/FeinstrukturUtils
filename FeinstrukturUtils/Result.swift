@@ -11,7 +11,17 @@ import Foundation
 
 public class Box<T> {
     public let unbox: T
-    init(_ value: T) { self.unbox = value }
+    public init(_ value: T) { self.unbox = value }
+}
+
+
+public func map<T, U>(result: Result<T>, f: T -> U) -> Result<U> {
+    switch result {
+    case .Success(let box):
+        return Result(f(box.unbox))
+    case .Failure(let error):
+        return Result(error)
+    }
 }
 
 
@@ -52,4 +62,5 @@ public enum Result<T> {
             return nil
         }
     }
+
 }
