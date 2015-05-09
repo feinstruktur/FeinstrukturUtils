@@ -40,4 +40,20 @@ class AsyncTests: XCTestCase {
         expect(fired) == true
     }
 
+
+    func test_Throttle() {
+        var t = Throttle(bufferTime: 0.01)
+        var count = 0
+        mainQueue {
+            for i in 0..<1000 {
+                t.execute {
+                    println("### \(count)")
+                    count++
+                }
+            }
+        }
+//        blockFor(0.02) { false }
+        expect(count).toEventually(equal(100), timeout: 0.5)
+    }
+
 }
