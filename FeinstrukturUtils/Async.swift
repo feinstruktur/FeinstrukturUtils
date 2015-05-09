@@ -9,6 +9,28 @@
 import Foundation
 
 
+public struct Timer {
+    private let timer: dispatch_source_t
+
+    public init(interval: NSTimeInterval, queue: dispatch_queue_t = dispatch_get_main_queue(), block: (Void -> Void)) {
+        self.timer = {
+            let t = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)
+            let interval_ns = UInt64(interval * NSTimeInterval(NSEC_PER_SEC))
+            let start = dispatch_time(DISPATCH_TIME_NOW, Int64(interval_ns))
+            dispatch_source_set_timer(t, start, interval_ns, interval_ns/1000)
+            dispatch_source_set_event_handler(t, block)
+            dispatch_resume(t)
+            return t
+            }()
+    }
+
+    public func cancel() {
+        dispatch_source_cancel(self.timer)
+    }
+    
+}
+
+
 public func mainQueue(block: Void -> Void) {
     NSOperationQueue.mainQueue().addOperationWithBlock {
         block()
