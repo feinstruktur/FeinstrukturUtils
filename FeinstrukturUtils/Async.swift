@@ -9,15 +9,27 @@
 import Foundation
 
 
+extension NSTimeInterval {
+    public var toNs: UInt64 {
+        return UInt64(self * NSTimeInterval(NSEC_PER_SEC))
+    }
+}
+
+
+public func nowPlus(seconds: NSTimeInterval) -> UInt64 {
+    return dispatch_time(DISPATCH_TIME_NOW, Int64(seconds.toNs))
+}
+
+
 public struct Timer {
     private let timer: dispatch_source_t
 
     public init(interval: NSTimeInterval, queue: dispatch_queue_t = dispatch_get_main_queue(), block: (Void -> Void)) {
         self.timer = {
             let t = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)
-            let interval_ns = UInt64(interval * NSTimeInterval(NSEC_PER_SEC))
-            let start = dispatch_time(DISPATCH_TIME_NOW, Int64(interval_ns))
-            dispatch_source_set_timer(t, start, interval_ns, interval_ns/1000)
+            let start = nowPlus(interval)
+            let leeway = NSTimeInterval(0.001).toNs
+            dispatch_source_set_timer(t, start, interval.toNs, leeway)
             dispatch_source_set_event_handler(t, block)
             dispatch_resume(t)
             return t
@@ -28,6 +40,34 @@ public struct Timer {
         dispatch_source_cancel(self.timer)
     }
     
+}
+
+
+public struct Throttle {
+    public let bufferTime: NSTimeInterval
+    public let queue: dispatch_queue_t
+    private var source: dispatch_source_t?
+
+    public init(bufferTime: NSTimeInterval, queue: dispatch_queue_t = dispatch_get_main_queue()) {
+        self.bufferTime = bufferTime
+        self.queue = queue
+    }
+
+    mutating public func execute(block: (Void -> Void)) {
+        if let src = self.source {
+            dispatch_source_cancel(src)
+        }
+        let src = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)
+        let start = nowPlus(bufferTime)
+        let leeway = NSTimeInterval(0.001).toNs
+        dispatch_source_set_timer(src, start, DISPATCH_TIME_FOREVER, leeway)
+        dispatch_source_set_event_handler(src) {
+            block()
+            dispatch_source_cancel(src)
+        }
+        dispatch_resume(src)
+        self.source = src
+    }
 }
 
 
@@ -60,7 +100,6 @@ public func blockFor(timeout: NSTimeInterval, until: () -> Bool) {
     }
 }
 
-// TODO: tests
 
 //  Usage:
 //
@@ -81,12 +120,7 @@ public typealias dispatch_cancelable_closure = (cancel : Bool) -> ()
 public func delay(time:NSTimeInterval, closure:()->()) ->  dispatch_cancelable_closure? {
     
     func dispatch_later(clsr:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(time * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), clsr)
+        dispatch_after(nowPlus(time), dispatch_get_main_queue(), clsr)
     }
     
     var closure:dispatch_block_t? = closure
