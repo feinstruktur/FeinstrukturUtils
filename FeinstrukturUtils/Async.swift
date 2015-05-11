@@ -28,7 +28,8 @@ public struct Timer {
         self.timer = {
             let t = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)
             let start = nowPlus(interval)
-            dispatch_source_set_timer(t, start, interval.toNs, interval.toNs/1000)
+            let leeway = NSTimeInterval(0.001).toNs
+            dispatch_source_set_timer(t, start, interval.toNs, leeway)
             dispatch_source_set_event_handler(t, block)
             dispatch_resume(t)
             return t
@@ -58,7 +59,8 @@ public struct Throttle {
         }
         let src = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue)
         let start = nowPlus(bufferTime)
-        dispatch_source_set_timer(src, start, DISPATCH_TIME_FOREVER, bufferTime.toNs/1000)
+        let leeway = NSTimeInterval(0.001).toNs
+        dispatch_source_set_timer(src, start, DISPATCH_TIME_FOREVER, leeway)
         dispatch_source_set_event_handler(src) {
             block()
             dispatch_source_cancel(src)
@@ -98,7 +100,6 @@ public func blockFor(timeout: NSTimeInterval, until: () -> Bool) {
     }
 }
 
-// TODO: tests
 
 //  Usage:
 //

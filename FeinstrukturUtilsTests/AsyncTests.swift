@@ -50,20 +50,19 @@ class AsyncTests: XCTestCase {
         }
         expect(stop).toEventuallyNot(beNil())
         let elapsed = stop?.timeIntervalSinceDate(start)
-        expect(elapsed) ≈ timeout ± 0.01
+        expect(elapsed) >= timeout
     }
     
 
     func test_Timer() {
-        let interval: NSTimeInterval = 0.01
-        var count = 0
+        let interval: NSTimeInterval = 0.2
         let q = dispatch_queue_create("queue", DISPATCH_QUEUE_SERIAL)
-        let t = Timer(interval: interval) {
-            println("count: \(count)")
+        var count = 0
+        let t = Timer(interval: interval, queue: q) {
             count++
         }
         
-        blockFor(interval * 5) { false }
+        blockFor(5.5 * interval) { false }
         expect(count) == 5
     }
     
