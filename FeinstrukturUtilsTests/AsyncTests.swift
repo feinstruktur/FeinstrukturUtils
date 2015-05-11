@@ -40,20 +40,55 @@ class AsyncTests: XCTestCase {
         expect(fired) == true
     }
 
+    
+    func test_delay() {
+        let timeout = 0.5
+        let start = NSDate()
+        var stop: NSDate?
+        delay(timeout) {
+            stop = NSDate()
+        }
+        expect(stop).toEventuallyNot(beNil())
+        let elapsed = stop?.timeIntervalSinceDate(start)
+        expect(elapsed) ≈ timeout ± 0.01
+    }
+    
 
-    func test_Throttle() {
-        var t = Throttle(bufferTime: 0.01)
+    func test_Timer() {
+        let interval: NSTimeInterval = 0.01
         var count = 0
-        mainQueue {
+        let q = dispatch_queue_create("queue", DISPATCH_QUEUE_SERIAL)
+        let t = Timer(interval: interval) {
+            println("count: \(count)")
+            count++
+        }
+        
+        blockFor(interval * 5) { false }
+        expect(count) == 5
+    }
+    
+    
+    func test_Throttle() {
+        var count = 0
+        var t = Throttle(bufferTime: 0.01)
+        let incrementLots: (Void -> Void) = {
             for i in 0..<1000 {
+                // all these blocks execute within the 10ms buffer time, therefore only one is actually run
                 t.execute {
-                    println("### \(count)")
                     count++
                 }
             }
         }
-//        blockFor(0.02) { false }
-        expect(count).toEventually(equal(100), timeout: 0.5)
+
+        incrementLots()
+        blockFor(0.011) { false }
+
+        expect(count).toEventually(equal(1), timeout: 0.5)
+        
+        incrementLots()
+        blockFor(0.011) { false }
+
+        expect(count).toEventually(equal(2), timeout: 0.5)
     }
 
 }
