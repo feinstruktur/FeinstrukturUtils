@@ -35,5 +35,11 @@ class StringTests: XCTestCase {
         let s = "!*'();:@&=+$,/?%#[]"
         expect(s.urlEncode()!) == "!*'();:@&=+$,/?%25%23%5B%5D"
     }
-    
+
+
+    func test_contains() {
+        expect("foobarbaz".contains("bar")) == true
+        expect("fooBARbaz".contains("bar")) == false
+    }
+
 }

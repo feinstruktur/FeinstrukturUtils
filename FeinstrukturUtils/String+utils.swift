@@ -26,5 +26,10 @@ extension String {
     public func urlEncode() -> String? {
         return self.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
     }
-    
+
+
+    public func contains(find: String) -> Bool{
+        return self.rangeOfString(find) != nil
+    }
+
 }
