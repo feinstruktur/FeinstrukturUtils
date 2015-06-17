@@ -81,7 +81,7 @@ public func randomElement<T>(array: [T], var weights: [Double] = [1.0]) -> T? {
             weights = Array(weights[0..<array.count])
         }
         assert(array.count == weights.count, "array size must equal weights size")
-        let index = findBucket(createHitmap(weights), random())
+        let index = findBucket(createHitmap(weights), value: random())
         return array[index]
     } else {
         return nil

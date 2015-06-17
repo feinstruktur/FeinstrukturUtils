@@ -12,10 +12,10 @@ import Nimble
 
 
 struct Fibonacci: SequenceType {
-    func generate() -> GeneratorOf<Int> {
+    func generate() -> AnyGenerator<Int> {
         var current = 0
         var next = 1
-        return GeneratorOf<Int> {
+        return anyGenerator {
             let res = current
             current = next
             next = res + current
@@ -28,7 +28,7 @@ struct Fibonacci: SequenceType {
 class SequenceTests: XCTestCase {
 
     func test_take() {
-        let source = SequenceOf(Fibonacci())
+        let source = AnySequence(Fibonacci())
         expect(Array(source.take(8))) == [0, 1, 1, 2, 3, 5, 8, 13]
         expect(Array(source.take(0))) == []
     }

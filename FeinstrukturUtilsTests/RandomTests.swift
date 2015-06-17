@@ -19,7 +19,7 @@ class RandomTests: XCTestCase {
         var minimum: UInt32 = UInt32.max
         var maximum: UInt32 = 0
         var mean: Double = 0
-        for i in 0..<n {
+        for _ in 0..<n {
             let r = random(inclusiveMaxValue)
             minimum = min(minimum, r)
             maximum = max(maximum, r)
@@ -36,7 +36,7 @@ class RandomTests: XCTestCase {
         var minimum: Double = 1
         var maximum: Double = 0
         var mean: Double = 0
-        for i in 0..<n {
+        for _ in 0..<n {
             let r: Double = random()
             minimum = min(minimum, r)
             maximum = max(maximum, r)
@@ -55,8 +55,8 @@ class RandomTests: XCTestCase {
         var minimum = to
         var maximum = from
         var mean: Double = 0
-        for i in 0..<n {
-            let r = random(from, to)
+        for _ in 0..<n {
+            let r = random(from, to: to)
             minimum = min(minimum, r)
             maximum = max(maximum, r)
             mean += r
@@ -87,14 +87,14 @@ class RandomTests: XCTestCase {
     }
     
     func test_findBucket() {
-        expect(findBucket([0.25, 0.5, 0.75], 0.0)) == 0
-        expect(findBucket([0.25, 0.5, 0.75], 0.2)) == 0
-        expect(findBucket([0.25, 0.5, 0.75], 0.25)) == 0
-        expect(findBucket([0.25, 0.5, 0.75], 0.3)) == 1
-        expect(findBucket([0.25, 0.5, 0.75], 0.6)) == 2
-        expect(findBucket([0.25, 0.5, 0.75], 0.8)) == 3
-        expect(findBucket([0.25, 0.5, 0.75], 1.2)) == 3
-        expect(findBucket([], 0)) == 0
+        expect(findBucket([0.25, 0.5, 0.75], value: 0.0)) == 0
+        expect(findBucket([0.25, 0.5, 0.75], value: 0.2)) == 0
+        expect(findBucket([0.25, 0.5, 0.75], value: 0.25)) == 0
+        expect(findBucket([0.25, 0.5, 0.75], value: 0.3)) == 1
+        expect(findBucket([0.25, 0.5, 0.75], value: 0.6)) == 2
+        expect(findBucket([0.25, 0.5, 0.75], value: 0.8)) == 3
+        expect(findBucket([0.25, 0.5, 0.75], value: 1.2)) == 3
+        expect(findBucket([], value: 0)) == 0
     }
 
     
@@ -104,7 +104,7 @@ class RandomTests: XCTestCase {
         var counts = [0, 0, 0, 0, 0]
         let hitmap = createHitmap([1.0, 2.0, 1.0, 4.0, 2.0])
         for _ in 0..<n {
-            let i = findBucket(hitmap, random())
+            let i = findBucket(hitmap, value: random())
             counts[i]++
         }
         expect(sum(counts)) == n

@@ -30,9 +30,9 @@ public class Observer: NSObject {
     }
     
     
-    public override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+    public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [NSObject : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if keyPath == self.keyPath {
-            let newValue: AnyObject? = change[NSKeyValueChangeNewKey]
+            let newValue: AnyObject? = change?[NSKeyValueChangeNewKey]
             self.block(newValue)
         }
     }

@@ -25,10 +25,11 @@ class ObserverTests: XCTestCase {
         obj.attribute = "foo"
         
         waitUntil { done in
-            let obs = Observer(observedObject: obj, keyPath: "attribute") { newValue in
+            let observer = Observer(observedObject: obj, keyPath: "attribute") { newValue in
                 expect(newValue as? String) == "bar"
                 done()
             }
+            expect(observer).notTo(beNil())
             obj.attribute = "bar"
         }
     }

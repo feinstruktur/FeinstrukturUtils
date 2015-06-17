@@ -27,7 +27,7 @@ struct InfiniteRandomGenerator<T: Equatable>: GeneratorType {
     mutating func next() -> Element? {
         if self.shuffledArray.count > 0 {
             let item =  self.shuffledArray.removeLast()
-            if contains(history, item) {
+            if history.contains(item) {
                 // the item is in the history - put it back to the bottom of the shuffled stack and get the next one off the top
                 self.shuffledArray.insert(item, atIndex: 0)
                 return self.next()

@@ -34,11 +34,8 @@
 		5A13C0F11AA74A95000B0323 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D51AA749A4000B0323 /* Result.swift */; };
 		5A13C0F21AA74A95000B0323 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D61AA749A4000B0323 /* Sequence.swift */; };
 		5A13C0F31AA74A95000B0323 /* String+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D71AA749A4000B0323 /* String+utils.swift */; };
-		5A5755341AD165DD009D1775 /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755331AD165DD009D1775 /* Try.swift */; };
-		5A5755351AD165DD009D1775 /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755331AD165DD009D1775 /* Try.swift */; };
 		5A5755441AD3DFEF009D1775 /* FSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755431AD3DFEF009D1775 /* FSButton.swift */; };
 		5A5755481AD3E1C7009D1775 /* UIKit+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755471AD3E1C7009D1775 /* UIKit+utils.swift */; };
-		5A93FA901AB81965004D2A0D /* TryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FA8F1AB81965004D2A0D /* TryTests.swift */; };
 		5A9487B41AA782C3003559BE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9487AD1AA782B7003559BE /* Nimble.framework */; };
 		5A9487BF1AA86492003559BE /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0AE1AA7492E000B0323 /* AlgorithmsTests.swift */; };
 		5A9487C01AA86492003559BE /* AppInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0AF1AA7492E000B0323 /* AppInfoTests.swift */; };
@@ -62,7 +59,6 @@
 		5AD1E8531AE2A19C0017CEEE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D51AA749A4000B0323 /* Result.swift */; };
 		5AD1E8541AE2A19C0017CEEE /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D61AA749A4000B0323 /* Sequence.swift */; };
 		5AD1E8551AE2A19C0017CEEE /* String+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D71AA749A4000B0323 /* String+utils.swift */; };
-		5AD1E8561AE2A19C0017CEEE /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755331AD165DD009D1775 /* Try.swift */; };
 		5AD1E8571AE2A19C0017CEEE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04678D1AD7BC5E00B5D995 /* Utils.swift */; };
 		5AD1E8581AE2A1CC0017CEEE /* Algorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0CA1AA749A4000B0323 /* Algorithms.swift */; };
 		5AD1E8591AE2A1CC0017CEEE /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0CB1AA749A4000B0323 /* AppInfo.swift */; };
@@ -140,10 +136,8 @@
 		5A13C0D61AA749A4000B0323 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		5A13C0D71AA749A4000B0323 /* String+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+utils.swift"; sourceTree = "<group>"; };
 		5A13C0E61AA749B0000B0323 /* XCTestCase+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+utils.swift"; sourceTree = "<group>"; };
-		5A5755331AD165DD009D1775 /* Try.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Try.swift; sourceTree = "<group>"; };
 		5A5755431AD3DFEF009D1775 /* FSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSButton.swift; sourceTree = "<group>"; };
 		5A5755471AD3E1C7009D1775 /* UIKit+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+utils.swift"; sourceTree = "<group>"; };
-		5A93FA8F1AB81965004D2A0D /* TryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TryTests.swift; sourceTree = "<group>"; };
 		5A9487A51AA782B7003559BE /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = External/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		5AD1E8311AE2A0A60017CEEE /* FeinstrukturUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeinstrukturUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD1E8341AE2A0A60017CEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -192,7 +186,6 @@
 				5A13C0D51AA749A4000B0323 /* Result.swift */,
 				5A13C0D61AA749A4000B0323 /* Sequence.swift */,
 				5A13C0D71AA749A4000B0323 /* String+utils.swift */,
-				5A5755331AD165DD009D1775 /* Try.swift */,
 				5A04678D1AD7BC5E00B5D995 /* Utils.swift */,
 				5A13C05A1AA709FF000B0323 /* Supporting Files */,
 			);
@@ -222,7 +215,6 @@
 				5A13C0B81AA7492E000B0323 /* ResultsTests.swift */,
 				5A13C0B91AA7492E000B0323 /* SequenceTests.swift */,
 				5A13C0BA1AA7492E000B0323 /* StringTests.swift */,
-				5A93FA8F1AB81965004D2A0D /* TryTests.swift */,
 				5A13C0BB1AA7492E000B0323 /* XCTestCase+utilsTests.swift */,
 				5A13C0E61AA749B0000B0323 /* XCTestCase+utils.swift */,
 				5A13C0671AA709FF000B0323 /* Supporting Files */,
@@ -376,7 +368,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					5A13C0571AA709FF000B0323 = {
 						CreatedOnToolsVersion = 6.3;
@@ -480,7 +472,6 @@
 				5A13C0E21AA749A4000B0323 /* Random.swift in Sources */,
 				5A13C0DB1AA749A4000B0323 /* Async.swift in Sources */,
 				5A5755481AD3E1C7009D1775 /* UIKit+utils.swift in Sources */,
-				5A5755341AD165DD009D1775 /* Try.swift in Sources */,
 				5A04678E1AD7BC5E00B5D995 /* Utils.swift in Sources */,
 				5A13C0DA1AA749A4000B0323 /* Array+utils.swift in Sources */,
 				5A13C0D81AA749A4000B0323 /* Algorithms.swift in Sources */,
@@ -497,14 +488,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A93FA901AB81965004D2A0D /* TryTests.swift in Sources */,
 				5A9487C11AA86492003559BE /* ArrayTests.swift in Sources */,
 				5A9487C51AA86492003559BE /* ObserverTests.swift in Sources */,
 				5A13C0EC1AA74A95000B0323 /* CoreGraphics+ext.swift in Sources */,
 				5A13C0EF1AA74A95000B0323 /* Queue.swift in Sources */,
 				5A9487C91AA86492003559BE /* SequenceTests.swift in Sources */,
 				5A13C0F11AA74A95000B0323 /* Result.swift in Sources */,
-				5A5755351AD165DD009D1775 /* Try.swift in Sources */,
 				5A04678F1AD7BC5E00B5D995 /* Utils.swift in Sources */,
 				5A9487C01AA86492003559BE /* AppInfoTests.swift in Sources */,
 				5A13C0EB1AA74A95000B0323 /* Async.swift in Sources */,
@@ -545,7 +534,6 @@
 				5AD1E8531AE2A19C0017CEEE /* Result.swift in Sources */,
 				5AD1E8541AE2A19C0017CEEE /* Sequence.swift in Sources */,
 				5AD1E8551AE2A19C0017CEEE /* String+utils.swift in Sources */,
-				5AD1E8561AE2A19C0017CEEE /* Try.swift in Sources */,
 				5AD1E8571AE2A19C0017CEEE /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +595,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feinstruktur.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -657,6 +646,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feinstruktur.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -711,8 +701,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feinstruktur.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -754,8 +744,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feinstruktur.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -763,6 +753,7 @@
 		5A2D5BDF1A0A9BED005A238B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -828,6 +819,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feinstruktur.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FeinstrukturUtils;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -880,6 +872,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.feinstruktur.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FeinstrukturUtils;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;

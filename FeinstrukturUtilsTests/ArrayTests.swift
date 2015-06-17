@@ -28,7 +28,7 @@ class ArrayTests: XCTestCase {
         // make sure this changes order with the expected split
         var equalCount = 0.0
         let iterations = 1000
-        for i in 0..<iterations {
+        for _ in 0..<iterations {
             if a.shuffled() == a {
                 equalCount++
             }
@@ -41,7 +41,7 @@ class ArrayTests: XCTestCase {
         // make sure this changes order with the expected split
         var equalCount = 0.0
         let iterations = 1000
-        for i in 0..<iterations {
+        for _ in 0..<iterations {
             if a.shuffled() == a {
                 equalCount++
             }
@@ -59,14 +59,14 @@ class ArrayTests: XCTestCase {
     }
     
     func test_each() {
-        var a = [0, 1, 2, 3]
+        let a = [0, 1, 2, 3]
         var res = [Int]()
         a.each { res.append($0 + 1) }
         expect(res) == [1, 2, 3, 4]
     }
     
     func test_indexes() {
-        var a = [0, 1, 4, 1, 3]
+        let a = [0, 1, 4, 1, 3]
         expect(a.indexes(1)) == [1, 3]
         expect(a.indexes(4)) == [2]
         expect(a.indexes(5)) == []

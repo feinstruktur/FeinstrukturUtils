@@ -19,7 +19,7 @@ class InfiniteRandomGeneratorTests: XCTestCase {
         let items = Array((0..<deckSize))
         var dealer = InfiniteRandomGenerator<Int>(array: items)
         var randomItems = [Int]()
-        for i in 0..<iterations*deckSize {
+        for _ in 0..<iterations*deckSize {
             randomItems.append(dealer.next()!)
         }
 
@@ -51,7 +51,7 @@ class InfiniteRandomGeneratorTests: XCTestCase {
     func test_next_two() {
         var firstValueIsZero = 0.0
         let iterations = 1000
-        for i in 0..<iterations {
+        for _ in 0..<iterations {
             var dealer = InfiniteRandomGenerator<Int>(array: [0, 1])
             let firstValue = dealer.next()!
             if firstValue == 1 {

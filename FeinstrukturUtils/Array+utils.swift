@@ -31,7 +31,7 @@ extension Array {
     
     mutating func remove<U: Equatable>(itemToRemove: U) {
         let lastIndex = self.count - 1
-        for (index, item) in enumerate(self.reverse()) {
+        for (index, item) in Array(self.reverse()).enumerate() {
             if item as! U == itemToRemove {
                 let indexFromStart = lastIndex - index
                 self.removeAtIndex(indexFromStart)
@@ -46,7 +46,7 @@ extension Array {
     }
     
     func each(block: (Int, Element) -> ()) {
-        for (index, item) in enumerate(self) {
+        for (index, item) in self.enumerate() {
             block(index, item)
         }
     }
@@ -62,7 +62,7 @@ extension Array {
     }
     
     func indexOf<T: Equatable>(item: T) -> Int? {
-        for (index, element) in enumerate(self) {
+        for (index, element) in self.enumerate() {
             if element as? T == item {
                 return index
             }
@@ -71,7 +71,7 @@ extension Array {
     }
     
     func indexOf(filter: (Element) -> Bool) -> Int? {
-        for (index, item) in enumerate(self) {
+        for (index, item) in self.enumerate() {
             if filter(item) {
                 return index
             }
@@ -108,7 +108,7 @@ extension Array {
     
     mutating func removeAtIndexes(indexes: [Int]) -> [T] {
         var removed = [T]()
-        for index in indexes.sorted(>) {
+        for index in indexes.sort(>) {
             removed.insert(self.removeAtIndex(index), atIndex: 0)
         }
         return removed
