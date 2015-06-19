@@ -23,7 +23,7 @@ public func tail<T>(array: [T]) -> [T] {
 }
 
 
-extension Array {
+public extension Array {
 
     func shuffled() -> Array {
         return shuffle(self)
