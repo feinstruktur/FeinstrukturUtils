@@ -35,7 +35,7 @@
 		0761CE0D1B33F78A00AD487F /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D61AA749A4000B0323 /* Sequence.swift */; };
 		0761CE0E1B33F78A00AD487F /* String+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D71AA749A4000B0323 /* String+utils.swift */; };
 		0761CE0F1B33F78A00AD487F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04678D1AD7BC5E00B5D995 /* Utils.swift */; };
-		0761CE101B33F7DD00AD487F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9487B11AA782B7003559BE /* Nimble.framework */; };
+		0761CE141B33FDB400AD487F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9487B11AA782B7003559BE /* Nimble.framework */; };
 		5A04678E1AD7BC5E00B5D995 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04678D1AD7BC5E00B5D995 /* Utils.swift */; };
 		5A04678F1AD7BC5E00B5D995 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A04678D1AD7BC5E00B5D995 /* Utils.swift */; };
 		5A13C0631AA709FF000B0323 /* FeinstrukturUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A13C0581AA709FF000B0323 /* FeinstrukturUtils.framework */; };
@@ -102,6 +102,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5AD1E8301AE2A0A60017CEEE;
 			remoteInfo = "FeinstrukturUtils-OSX";
+		};
+		0761CE121B33FD3400AD487F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A9487A51AA782B7003559BE /* Nimble.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F925EAC195C0D6300ED456B;
+			remoteInfo = "Nimble-OSX";
 		};
 		5A13C0641AA709FF000B0323 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -186,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0761CE101B33F7DD00AD487F /* Nimble.framework in Frameworks */,
+				0761CE141B33FDB400AD487F /* Nimble.framework in Frameworks */,
 				0761CDEB1B33F6F000AD487F /* FeinstrukturUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +382,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0761CE131B33FD3400AD487F /* PBXTargetDependency */,
 				0761CDED1B33F6F000AD487F /* PBXTargetDependency */,
 			);
 			name = "FeinstrukturUtilsTests-OSX";
@@ -665,6 +673,11 @@
 			isa = PBXTargetDependency;
 			target = 5AD1E8301AE2A0A60017CEEE /* FeinstrukturUtils-OSX */;
 			targetProxy = 0761CDEC1B33F6F000AD487F /* PBXContainerItemProxy */;
+		};
+		0761CE131B33FD3400AD487F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nimble-OSX";
+			targetProxy = 0761CE121B33FD3400AD487F /* PBXContainerItemProxy */;
 		};
 		5A13C0651AA709FF000B0323 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
