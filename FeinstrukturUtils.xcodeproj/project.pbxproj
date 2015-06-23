@@ -1117,6 +1117,7 @@
 				0761CDEF1B33F6F000AD487F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A13C06B1AA709FF000B0323 /* Build configuration list for PBXNativeTarget "FeinstrukturUtils" */ = {
 			isa = XCConfigurationList;
