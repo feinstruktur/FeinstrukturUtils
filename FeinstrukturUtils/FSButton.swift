@@ -30,8 +30,8 @@ func convertToUIFont(font: AnyObject!, size: CGFloat) -> UIFont! {
             let name = CTFontCopyPostScriptName(font as! CTFont)
             return UIFont(name: name as String, size: size)
         case CGFontGetTypeID():
-            let name = CGFontCopyPostScriptName(font as! CGFont)
-            return UIFont(name: name as String, size: size)
+            let name = CGFontCopyPostScriptName((font as! CGFont))
+            return UIFont(name: name as! String, size: size)
         default:
             return UIFont.systemFontOfSize(size)
         }
