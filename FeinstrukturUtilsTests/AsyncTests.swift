@@ -6,7 +6,6 @@
 //
 //
 
-import UIKit
 import XCTest
 import Nimble
 
@@ -61,6 +60,7 @@ class AsyncTests: XCTestCase {
         let t = Timer(interval: interval, queue: q) {
             count++
         }
+        expect(t).notTo(beNil())
         
         blockFor(5.5 * interval) { false }
         expect(count) == 5
@@ -71,7 +71,7 @@ class AsyncTests: XCTestCase {
         var count = 0
         var t = Throttle(bufferTime: 0.01)
         let incrementLots: (Void -> Void) = {
-            for i in 0..<1000 {
+            for _ in 0..<1000 {
                 // all these blocks execute within the 10ms buffer time, therefore only one is actually run
                 t.execute {
                     count++

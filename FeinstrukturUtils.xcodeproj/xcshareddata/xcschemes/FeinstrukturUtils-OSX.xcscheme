@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A13C0571AA709FF000B0323"
+               BlueprintIdentifier = "5AD1E8301AE2A0A60017CEEE"
                BuildableName = "FeinstrukturUtils.framework"
-               BlueprintName = "FeinstrukturUtils"
-               ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A13C0611AA709FF000B0323"
-               BuildableName = "FeinstrukturUtilsTests.xctest"
-               BlueprintName = "FeinstrukturUtilsTests"
+               BlueprintName = "FeinstrukturUtils-OSX"
                ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A13C0611AA709FF000B0323"
-               BuildableName = "FeinstrukturUtilsTests.xctest"
-               BlueprintName = "FeinstrukturUtilsTests"
+               BlueprintIdentifier = "0761CDE51B33F6F000AD487F"
+               BuildableName = "FeinstrukturUtilsTests-OSX.xctest"
+               BlueprintName = "FeinstrukturUtilsTests-OSX"
                ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A13C0571AA709FF000B0323"
+            BlueprintIdentifier = "5AD1E8301AE2A0A60017CEEE"
             BuildableName = "FeinstrukturUtils.framework"
-            BlueprintName = "FeinstrukturUtils"
+            BlueprintName = "FeinstrukturUtils-OSX"
             ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A13C0571AA709FF000B0323"
+            BlueprintIdentifier = "5AD1E8301AE2A0A60017CEEE"
             BuildableName = "FeinstrukturUtils.framework"
-            BlueprintName = "FeinstrukturUtils"
+            BlueprintName = "FeinstrukturUtils-OSX"
             ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A13C0571AA709FF000B0323"
+            BlueprintIdentifier = "5AD1E8301AE2A0A60017CEEE"
             BuildableName = "FeinstrukturUtils.framework"
-            BlueprintName = "FeinstrukturUtils"
+            BlueprintName = "FeinstrukturUtils-OSX"
             ReferencedContainer = "container:FeinstrukturUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

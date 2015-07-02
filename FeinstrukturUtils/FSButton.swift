@@ -48,7 +48,7 @@ extension CATextLayer {
 
     var uifont: UIFont! {
         get {
-            return convertToUIFont(self.font, self.fontSize)
+            return convertToUIFont(self.font, size: self.fontSize)
         }
     }
 
@@ -195,7 +195,7 @@ public class FSButton: UIControl {
         self.mainLayer.frame = self.bounds
         self.mainLayer.path = {
             let padding = -self.borderWidth/2
-            var rect = CGRect(origin: CGPointZero, size: self.size).withPadding(x: padding, y: padding)
+            let rect = CGRect(origin: CGPointZero, size: self.size).withPadding(x: padding, y: padding)
             return UIBezierPath(roundedRect: rect, cornerRadius: self.cornerRadius).CGPath
         }()
 
@@ -266,7 +266,7 @@ extension FSButton {
 // MARK: - Touch handling
 extension FSButton {
 
-    public override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent) -> Bool {
+    public override func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
         self.previousLocation = touch.locationInView(self.superview)        
         if self.frame.contains(self.previousLocation) {
             self.touched = true
@@ -274,7 +274,7 @@ extension FSButton {
         return self.touched
     }
 
-    public override func continueTrackingWithTouch(touch: UITouch, withEvent event: UIEvent) -> Bool {
+    public override func continueTrackingWithTouch(touch: UITouch, withEvent event: UIEvent?) -> Bool {
         if !self.pinned {
             let location = touch.locationInView(self.superview)
             let delta = location - self.previousLocation
@@ -285,7 +285,7 @@ extension FSButton {
         return true
     }
 
-    public override func endTrackingWithTouch(touch: UITouch, withEvent event: UIEvent) {
+    public override func endTrackingWithTouch(touch: UITouch?, withEvent event: UIEvent?) {
         self.touched = false
     }
     

@@ -75,7 +75,7 @@ public func /(lhs: CGSize, rhs: CGFloat) -> CGSize {
 // MARK: - CGRect
 
 extension CGRect {
-    public func withPadding(# x: CGFloat, y: CGFloat) -> CGRect {
+    public func withPadding(x x: CGFloat, y: CGFloat) -> CGRect {
         return CGRect(origin: self.origin - (x,y), size: self.size + 2 * (x,y))
     }
 }

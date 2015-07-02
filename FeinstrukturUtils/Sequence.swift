@@ -16,10 +16,10 @@ struct TakeSequence<T: SequenceType>: SequenceType {
         self.numberOfItems = numberOfItems
         self.sequence = sequence
     }
-    func generate() -> GeneratorOf<T.Generator.Element> {
+    func generate() -> AnyGenerator<T.Generator.Element> {
         var count = 0
         var generator = self.sequence.generate()
-        return GeneratorOf<T.Generator.Element> {
+        return anyGenerator {
             if count < self.numberOfItems {
                 count++
                 return generator.next()
@@ -31,8 +31,8 @@ struct TakeSequence<T: SequenceType>: SequenceType {
 }
 
 
-extension SequenceOf {
-    func take(n: Int) -> SequenceOf<T> {
-        return SequenceOf(TakeSequence(n, self))
+extension AnySequence {
+    func take(n: Int) -> AnySequence<T> {
+        return AnySequence(TakeSequence(n, self))
     }
 }

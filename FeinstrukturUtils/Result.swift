@@ -9,16 +9,10 @@
 import Foundation
 
 
-public class Box<T> {
-    public let unbox: T
-    public init(_ value: T) { self.unbox = value }
-}
-
-
 public func map<T, U>(result: Result<T>, f: T -> U) -> Result<U> {
     switch result {
-    case .Success(let box):
-        return Result(f(box.unbox))
+    case .Success(let value):
+        return Result(f(value))
     case .Failure(let error):
         return Result(error)
     }
@@ -26,10 +20,10 @@ public func map<T, U>(result: Result<T>, f: T -> U) -> Result<U> {
 
 
 public enum Result<T> {
-    case Success(Box<T>)
+    case Success(T)
     case Failure(NSError)
     
-    public init(_ value: T) { self = .Success(Box(value)) }
+    public init(_ value: T) { self = .Success(value) }
     public init(_ error: NSError) { self = .Failure(error) }
     
     public var succeeded: Bool {
@@ -48,7 +42,7 @@ public enum Result<T> {
     public var value: T? {
         switch self {
         case .Success(let value):
-            return value.unbox
+            return value
         default:
             return nil
         }
