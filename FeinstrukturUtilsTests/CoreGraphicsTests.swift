@@ -84,6 +84,24 @@ class CGRectTests: XCTestCase {
         expect(r.withPadding(x: 5, y: 15)) == CGRect(x: -4, y: -13, width: 15, height: 40)
     }
     
+    func test_createTiles() {
+        let r = CGRect(x: 20, y: 10, width: 100, height: 60)
+        let tiles = r.createTiles(columns: 2, rows: 3)
+        expect(tiles.count) == 6
+        tiles.each { expect($0.size) == CGSize(width: 50, height: 20) }
+        expect(tiles[0].origin) == CGPoint(x: 20, y: 10)
+        expect(tiles[1].origin) == CGPoint(x: 70, y: 10)
+        expect(tiles[2].origin) == CGPoint(x: 20, y: 30)
+        expect(tiles[3].origin) == CGPoint(x: 70, y: 30)
+        expect(tiles[4].origin) == CGPoint(x: 20, y: 50)
+        expect(tiles[5].origin) == CGPoint(x: 70, y: 50)
+    }
+    
+    func test_center() {
+        let r = CGRect(x: 20, y: 10, width: 100, height: 60)
+        expect(r.center) == CGPoint(x: 70, y: 40)
+    }
+    
 }
 
 

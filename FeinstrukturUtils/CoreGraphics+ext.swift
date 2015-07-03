@@ -74,10 +74,35 @@ public func /(lhs: CGSize, rhs: CGFloat) -> CGSize {
 
 // MARK: - CGRect
 
-extension CGRect {
-    public func withPadding(x x: CGFloat, y: CGFloat) -> CGRect {
+public extension CGRect {
+    
+    func withPadding(x x: CGFloat, y: CGFloat) -> CGRect {
         return CGRect(origin: self.origin - (x,y), size: self.size + 2 * (x,y))
     }
+    
+    func createTiles(columns columns: Int, rows: Int) -> [CGRect] {
+        let w = self.width / CGFloat(columns)
+        let h = self.height / CGFloat(rows)
+        var current: (CGFloat, CGFloat) = (self.origin.x, self.origin.y)
+        var tiles = [CGRect]()
+        for _ in 0..<rows {
+            current.0 = self.origin.x
+            for _ in 0..<columns {
+                let r = CGRect(x: current.0, y: current.1, width: w, height: h)
+                tiles.append(r)
+                current.0 += w
+            }
+            current.1 += h
+        }
+        return tiles
+    }
+    
+    var center: CGPoint {
+        get {
+            return self.origin + CGPoint(x: self.width / 2.0, y: self.height / 2.0)
+        }
+    }
+
 }
 
 
