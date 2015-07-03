@@ -118,4 +118,28 @@ class ArrayTests: XCTestCase {
         expect(a) == ["0", "2", "4"]
     }
     
+    func test_objectsAtIndexes() {
+        let a = ["0", "1", "2", "3", "4"]
+        let idx = IndexSet([1, 3])
+        expect(a.objectsAtIndexes(idx)) == ["1", "3"]
+    }
+
+    func test_objectsAtIndexes_reverse() {
+        let a = ["0", "1", "2", "3", "4"]
+        let idx = IndexSet([3, 1])
+        expect(a.objectsAtIndexes(idx)) == ["3", "1"]
+    }
+
+    func test_objectsAtIndexes_subscript() {
+        let a = ["0", "1", "2", "3", "4"]
+        let idx = IndexSet([1, 3])
+        expect(a[idx]) == ["1", "3"]
+    }
+    
+    func test_objectsAtIndexes_duplicates() {
+        let a = ["0", "1", "2", "3", "4"]
+        let idx = IndexSet([1, 1, 3, 2])
+        expect(a[idx]) == ["1", "1", "3", "2"]
+    }
+
 }

@@ -114,4 +114,16 @@ public extension Array {
         return removed
     }
     
+    func objectsAtIndexes(indexes: IndexSet) -> [T] {
+        var res = [T]()
+        for i in indexes {
+            res.append(self[i])
+        }
+        return res
+    }
+    
+    subscript(indexes: IndexSet) -> [T] {
+        return self.objectsAtIndexes(indexes)
+    }
+    
 }
