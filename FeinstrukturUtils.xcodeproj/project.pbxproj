@@ -65,6 +65,12 @@
 		5A13C0F31AA74A95000B0323 /* String+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0D71AA749A4000B0323 /* String+utils.swift */; };
 		5A5755441AD3DFEF009D1775 /* FSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755431AD3DFEF009D1775 /* FSButton.swift */; };
 		5A5755481AD3E1C7009D1775 /* UIKit+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5755471AD3E1C7009D1775 /* UIKit+utils.swift */; };
+		5A92DF581B4672320075FBC7 /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92DF571B4672320075FBC7 /* IndexSetTests.swift */; };
+		5A92DF5C1B4672380075FBC7 /* IndexSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92DF571B4672320075FBC7 /* IndexSetTests.swift */; };
+		5A92DF5E1B467AEE0075FBC7 /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92DF5D1B467AEE0075FBC7 /* IndexSet.swift */; };
+		5A92DF5F1B467AEE0075FBC7 /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92DF5D1B467AEE0075FBC7 /* IndexSet.swift */; };
+		5A92DF601B467AEE0075FBC7 /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92DF5D1B467AEE0075FBC7 /* IndexSet.swift */; };
+		5A92DF611B467AEE0075FBC7 /* IndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92DF5D1B467AEE0075FBC7 /* IndexSet.swift */; };
 		5A9487B41AA782C3003559BE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9487AD1AA782B7003559BE /* Nimble.framework */; };
 		5A9487BF1AA86492003559BE /* AlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0AE1AA7492E000B0323 /* AlgorithmsTests.swift */; };
 		5A9487C01AA86492003559BE /* AppInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13C0AF1AA7492E000B0323 /* AppInfoTests.swift */; };
@@ -183,6 +189,8 @@
 		5A13C0E61AA749B0000B0323 /* XCTestCase+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+utils.swift"; sourceTree = "<group>"; };
 		5A5755431AD3DFEF009D1775 /* FSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSButton.swift; sourceTree = "<group>"; };
 		5A5755471AD3E1C7009D1775 /* UIKit+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+utils.swift"; sourceTree = "<group>"; };
+		5A92DF571B4672320075FBC7 /* IndexSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSetTests.swift; sourceTree = "<group>"; };
+		5A92DF5D1B467AEE0075FBC7 /* IndexSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSet.swift; sourceTree = "<group>"; };
 		5A9487A51AA782B7003559BE /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = External/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		5AD1E8311AE2A0A60017CEEE /* FeinstrukturUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeinstrukturUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD1E8341AE2A0A60017CEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -241,6 +249,7 @@
 				5A13C0CC1AA749A4000B0323 /* Array+utils.swift */,
 				5A13C0CD1AA749A4000B0323 /* Async.swift */,
 				5A13C0CF1AA749A4000B0323 /* CoreGraphics+ext.swift */,
+				5A92DF5D1B467AEE0075FBC7 /* IndexSet.swift */,
 				5A13C0D01AA749A4000B0323 /* InfiniteRandomGenerator.swift */,
 				5A13C0D21AA749A4000B0323 /* Observer.swift */,
 				5A13C0D31AA749A4000B0323 /* Queue.swift */,
@@ -270,6 +279,7 @@
 				5A13C0B01AA7492E000B0323 /* ArrayTests.swift */,
 				5A13C0B11AA7492E000B0323 /* AsyncTests.swift */,
 				5A13C0B21AA7492E000B0323 /* CoreGraphicsTests.swift */,
+				5A92DF571B4672320075FBC7 /* IndexSetTests.swift */,
 				5A13C0B31AA7492E000B0323 /* InfiniteRandomGeneratorTests.swift */,
 				5A13C0B51AA7492E000B0323 /* ObserverTests.swift */,
 				5A13C0B61AA7492E000B0323 /* QueueTests.swift */,
@@ -277,9 +287,9 @@
 				5A13C0B81AA7492E000B0323 /* ResultsTests.swift */,
 				5A13C0B91AA7492E000B0323 /* SequenceTests.swift */,
 				5A13C0BA1AA7492E000B0323 /* StringTests.swift */,
-				5A13C0BB1AA7492E000B0323 /* XCTestCase+utilsTests.swift */,
-				5A13C0E61AA749B0000B0323 /* XCTestCase+utils.swift */,
 				5A13C0671AA709FF000B0323 /* Supporting Files */,
+				5A13C0E61AA749B0000B0323 /* XCTestCase+utils.swift */,
+				5A13C0BB1AA7492E000B0323 /* XCTestCase+utilsTests.swift */,
 			);
 			path = FeinstrukturUtilsTests;
 			sourceTree = "<group>";
@@ -580,7 +590,9 @@
 				0761CDF91B33F77400AD487F /* CoreGraphicsTests.swift in Sources */,
 				0761CDFA1B33F77400AD487F /* InfiniteRandomGeneratorTests.swift in Sources */,
 				0761CDFB1B33F77400AD487F /* ObserverTests.swift in Sources */,
+				5A92DF611B467AEE0075FBC7 /* IndexSet.swift in Sources */,
 				0761CDFC1B33F77400AD487F /* QueueTests.swift in Sources */,
+				5A92DF5C1B4672380075FBC7 /* IndexSetTests.swift in Sources */,
 				0761CDFD1B33F77400AD487F /* RandomTests.swift in Sources */,
 				0761CDFE1B33F77400AD487F /* ResultsTests.swift in Sources */,
 				0761CDFF1B33F77400AD487F /* SequenceTests.swift in Sources */,
@@ -607,6 +619,7 @@
 				5A13C0D91AA749A4000B0323 /* AppInfo.swift in Sources */,
 				5A13C0E11AA749A4000B0323 /* Queue.swift in Sources */,
 				5A13C0DD1AA749A4000B0323 /* CoreGraphics+ext.swift in Sources */,
+				5A92DF5E1B467AEE0075FBC7 /* IndexSet.swift in Sources */,
 				5A5755441AD3DFEF009D1775 /* FSButton.swift in Sources */,
 				5A13C0E31AA749A4000B0323 /* Result.swift in Sources */,
 			);
@@ -636,7 +649,9 @@
 				5A9487CC1AA86492003559BE /* XCTestCase+utils.swift in Sources */,
 				5A9487CB1AA86492003559BE /* XCTestCase+utilsTests.swift in Sources */,
 				5A9487C71AA86492003559BE /* RandomTests.swift in Sources */,
+				5A92DF5F1B467AEE0075FBC7 /* IndexSet.swift in Sources */,
 				5A9487BF1AA86492003559BE /* AlgorithmsTests.swift in Sources */,
+				5A92DF581B4672320075FBC7 /* IndexSetTests.swift in Sources */,
 				5A9487C41AA86492003559BE /* InfiniteRandomGeneratorTests.swift in Sources */,
 				5A13C0F01AA74A95000B0323 /* Random.swift in Sources */,
 				5A13C0EE1AA74A95000B0323 /* Observer.swift in Sources */,
@@ -655,6 +670,7 @@
 				5AD1E85A1AE2A1CC0017CEEE /* Array+utils.swift in Sources */,
 				5AD1E85B1AE2A1CC0017CEEE /* Async.swift in Sources */,
 				5AD1E84E1AE2A19C0017CEEE /* CoreGraphics+ext.swift in Sources */,
+				5A92DF601B467AEE0075FBC7 /* IndexSet.swift in Sources */,
 				5AD1E84F1AE2A19C0017CEEE /* InfiniteRandomGenerator.swift in Sources */,
 				5AD1E8501AE2A19C0017CEEE /* Observer.swift in Sources */,
 				5AD1E8511AE2A19C0017CEEE /* Queue.swift in Sources */,
