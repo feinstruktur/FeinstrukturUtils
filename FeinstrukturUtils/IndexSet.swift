@@ -13,11 +13,11 @@ public struct IndexSet: SequenceType {
 
     private var indexes: [Int]
 
-    init(_ indexes: [Int]) {
+    public init(_ indexes: [Int]) {
         self.indexes = indexes
     }
 
-    init(_ range: Range<Int>) {
+    public init(_ range: Range<Int>) {
         self.indexes = Array(range)
     }
 
