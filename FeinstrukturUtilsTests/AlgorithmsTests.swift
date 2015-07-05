@@ -22,4 +22,16 @@ class AlgorithmsTests: XCTestCase {
         expect(s) == 0
     }
     
+    func test_times() {
+        var count = 0
+        3.times { count++ }
+        expect(count) == 3
+    }
+    
+    func test_times_negative() {
+        var count = 0
+        (-3).times { count++ }
+        expect(count) == 0
+    }
+    
 }

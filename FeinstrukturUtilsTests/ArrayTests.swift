@@ -142,4 +142,10 @@ class ArrayTests: XCTestCase {
         expect(a[idx]) == ["1", "1", "3", "2"]
     }
 
+    func test_multiplication() {
+        let a = ["1", "2"]
+        expect(a * 3) == ["1", "2", "1", "2", "1", "2"]
+        expect(3 * a) == ["1", "2", "1", "2", "1", "2"]
+    }
+    
 }

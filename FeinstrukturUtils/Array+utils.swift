@@ -14,6 +14,18 @@ public func - <T: Equatable>(first: Array<T>, second: Array<T>) -> Array<T> {
 }
 
 
+public func * <T>(array: Array<T>, n: Int) -> Array<T> {
+    var res = [T]()
+    n.times { res += array }
+    return res
+}
+
+
+public func * <T>(n: Int, array: Array<T>) -> Array<T> {
+    return array * n
+}
+
+
 public func tail<T>(array: [T]) -> [T] {
     if array.count > 0 {
         return Array(array[1..<array.count])

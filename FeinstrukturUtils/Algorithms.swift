@@ -37,3 +37,14 @@ public func sum<T: Addable>(values: [T]) -> T {
     }
 }
 
+
+extension Int {
+    public func times(block: Void -> Void) {
+        if self > 0 {
+            for _ in 0..<self {
+                block()
+            }
+        }
+    }
+}
+
