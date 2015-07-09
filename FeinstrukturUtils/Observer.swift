@@ -28,9 +28,9 @@ public class Observer: NSObject {
     deinit {
         self.observedObject.removeObserver(self, forKeyPath: self.keyPath)
     }
+
     
-    
-    public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [NSObject : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if keyPath == self.keyPath {
             let newValue: AnyObject? = change?[NSKeyValueChangeNewKey]
             self.block(newValue)

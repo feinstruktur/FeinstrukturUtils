@@ -118,23 +118,23 @@ public extension Array {
         return result
     }
     
-    mutating func removeAtIndexes(indexes: [Int]) -> [T] {
-        var removed = [T]()
+    mutating func removeAtIndexes(indexes: [Int]) -> [Element] {
+        var removed = [Element]()
         for index in indexes.sort(>) {
             removed.insert(self.removeAtIndex(index), atIndex: 0)
         }
         return removed
     }
     
-    func objectsAtIndexes(indexes: IndexSet) -> [T] {
-        var res = [T]()
+    func objectsAtIndexes(indexes: IndexSet) -> [Element] {
+        var res = [Element]()
         for i in indexes {
             res.append(self[i])
         }
         return res
     }
     
-    subscript(indexes: IndexSet) -> [T] {
+    subscript(indexes: IndexSet) -> [Element] {
         return self.objectsAtIndexes(indexes)
     }
     

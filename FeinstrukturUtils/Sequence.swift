@@ -32,7 +32,7 @@ struct TakeSequence<T: SequenceType>: SequenceType {
 
 
 extension AnySequence {
-    func take(n: Int) -> AnySequence<T> {
+    func take(n: Int) -> AnySequence<Element> {
         return AnySequence(TakeSequence(n, self))
     }
 }

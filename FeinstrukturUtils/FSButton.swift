@@ -155,7 +155,7 @@ public class FSButton: UIControl {
         self.setup()
     }
 
-    public required init(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.setup()
     }
