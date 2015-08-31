@@ -5,17 +5,24 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "95438028B10BBB846574013D29F154A00556A9D1" : 0,
+    "5DECC3D92606A8E639BB23E9F74A619917E98DD9" : 0,
     "EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E9843614-D831-441F-9450-548D474C864E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "95438028B10BBB846574013D29F154A00556A9D1" : "FeinstrukturUtilsExternal\/Nimble",
+    "5DECC3D92606A8E639BB23E9F74A619917E98DD9" : "..",
     "EA01C41D6DE042C1144A7BF4C7FC2FCE204556DD" : "FeinstrukturUtils"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "FeinstrukturUtils",
-  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FeinstrukturUtils.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:feinstruktur\/CoPilot.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5DECC3D92606A8E639BB23E9F74A619917E98DD9"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Quick\/Nimble.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

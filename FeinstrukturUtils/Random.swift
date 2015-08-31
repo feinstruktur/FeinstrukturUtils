@@ -35,7 +35,9 @@ public func random(from: Double, to: Double) -> Double {
 public func shuffle<T>(var array: Array<T>) -> Array<T> {
     for var i = array.count - 1; i > 0; i-- {
         let j = Int(random(i))
-        swap(&array[j], &array[i])
+        if i != j {
+            swap(&array[j], &array[i])
+        }
     }
     return array
 }

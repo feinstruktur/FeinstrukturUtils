@@ -279,7 +279,7 @@ extension FSButton {
             let location = touch.locationInView(self.superview)
             let delta = location - self.previousLocation
             self.previousLocation = location
-            self.frame.offset(dx: delta.x, dy: delta.y)
+            self.frame.offsetInPlace(dx: delta.x, dy: delta.y)
         }
 
         return true
