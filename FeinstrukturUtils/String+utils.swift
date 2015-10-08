@@ -24,7 +24,8 @@ extension String {
     
     
     public func urlEncode() -> String? {
-        return self.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+        let allowed = NSCharacterSet(charactersInString: "!*'();:@&=+$,/?")
+        return self.stringByAddingPercentEncodingWithAllowedCharacters(allowed)
     }
 
 
