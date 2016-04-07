@@ -103,5 +103,5 @@ function main {
     fi
 }
 
-main $@
+main $@ | grep 'Test Case\|Test Suite' > test.log
 
