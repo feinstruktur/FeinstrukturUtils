@@ -19,9 +19,9 @@ struct TakeSequence<T: SequenceType>: SequenceType {
     func generate() -> AnyGenerator<T.Generator.Element> {
         var count = 0
         var generator = self.sequence.generate()
-        return anyGenerator {
+        return AnyGenerator {
             if count < self.numberOfItems {
-                count++
+                count += 1
                 return generator.next()
             } else {
                 return nil

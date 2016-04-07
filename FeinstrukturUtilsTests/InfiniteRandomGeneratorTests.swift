@@ -54,7 +54,7 @@ class InfiniteRandomGeneratorTests: XCTestCase {
             var dealer = InfiniteRandomGenerator<Int>(array: [0, 1])
             let firstValue = dealer.next()!
             if firstValue == 1 {
-                firstValueIsZero++
+                firstValueIsZero += 1
             }
             expect(dealer.next()!) == (firstValue + 1) % 2
             expect(dealer.next()!) == firstValue

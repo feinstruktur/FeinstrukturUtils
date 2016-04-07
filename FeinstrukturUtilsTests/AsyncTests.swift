@@ -58,7 +58,7 @@ class AsyncTests: XCTestCase {
         let q = dispatch_queue_create("queue", DISPATCH_QUEUE_SERIAL)
         var count = 0
         let t = Timer(interval: interval, queue: q) {
-            count++
+            count += 1
         }
         expect(t).notTo(beNil())
         
@@ -74,7 +74,7 @@ class AsyncTests: XCTestCase {
             for _ in 0..<1000 {
                 // all these blocks execute within the 10ms buffer time, therefore only one is actually run
                 t.execute {
-                    count++
+                    count += 1
                 }
             }
         }

@@ -34,14 +34,4 @@ class ResultsTests: XCTestCase {
         expect(Result<String>("foo").error).to(beNil())
     }
     
-    
-    // http://owensd.io/2014/08/06/fixed-enum-layout.html
-    // (this is why we need to use Success(Box<T>) instead of Success(@autoclosure() -> T)
-    func test_idempotence() {
-        var v: Int = 0
-        let r = Result(v++)
-        expect(r.value!) == 0
-        expect(r.value!) == 0
-    }
-    
 }
