@@ -32,14 +32,16 @@ public func random(from: Double, to: Double) -> Double {
 
 
 // Fisher-Yates (aka Knuth) Shuffle
-public func shuffle<T>(var array: Array<T>) -> Array<T> {
-    for var i = array.count - 1; i > 0; i-- {
+public func shuffle<T>(array: Array<T>) -> Array<T> {
+    var res = array
+    // indexes [N-1, ..., 1]
+    for i in (res.count - 1).stride(through: 1, by: -1) {
         let j = Int(random(i))
         if i != j {
-            swap(&array[j], &array[i])
+            swap(&res[j], &res[i])
         }
     }
-    return array
+    return res
 }
 
 
@@ -61,7 +63,7 @@ func createHitmap(weights: [Double]) -> [Double] {
 func findBucket(hitmap: [Double], value: Double) -> Int {
     var index = 0
     while index < hitmap.count && value > hitmap[index] {
-        index++
+        index += 1
     }
     return index
 }
@@ -71,19 +73,20 @@ func findBucket(hitmap: [Double], value: Double) -> Int {
 // If weights is empty it will be filled with 1.0
 // If weights.count > array.count it will be trimmed to array.count
 // Don't use weights that sum to less than or equal to zero
-public func randomElement<T>(array: [T], var weights: [Double] = [1.0]) -> T? {
+public func randomElement<T>(array: [T], weights: [Double] = [1.0]) -> T? {
+    var w = weights
     if array.count > 0 {
-        if weights == [] {
-            weights = [1.0]
+        if w == [] {
+            w = [1.0]
         }
-        while weights.count < array.count {
-            weights.append(weights.last ?? 1.0)
+        while w.count < array.count {
+            w.append(w.last ?? 1.0)
         }
-        if weights.count > array.count {
-            weights = Array(weights[0..<array.count])
+        if w.count > array.count {
+            w = Array(w[0..<array.count])
         }
-        assert(array.count == weights.count, "array size must equal weights size")
-        let index = findBucket(createHitmap(weights), value: random())
+        assert(array.count == w.count, "array size must equal weights size")
+        let index = findBucket(createHitmap(w), value: random())
         return array[index]
     } else {
         return nil

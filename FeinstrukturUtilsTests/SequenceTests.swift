@@ -14,7 +14,7 @@ struct Fibonacci: SequenceType {
     func generate() -> AnyGenerator<Int> {
         var current = 0
         var next = 1
-        return anyGenerator {
+        return AnyGenerator {
             let res = current
             current = next
             next = res + current

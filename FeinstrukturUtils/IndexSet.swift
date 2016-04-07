@@ -23,11 +23,13 @@ public struct IndexSet: SequenceType {
 
     public func generate() -> AnyGenerator<Int> {
         var next = 0
-        return anyGenerator {
+        return AnyGenerator {
             if (next == self.indexes.count) {
                 return nil
             }
-            return self.indexes[next++]
+            let res = self.indexes[next]
+            next += 1
+            return res
         }
     }
 

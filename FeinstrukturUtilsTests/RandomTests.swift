@@ -104,7 +104,7 @@ class RandomTests: XCTestCase {
         let hitmap = createHitmap([1.0, 2.0, 1.0, 4.0, 2.0])
         for _ in 0..<n {
             let i = findBucket(hitmap, value: random())
-            counts[i]++
+            counts[i] += 1
         }
         expect(sum(counts)) == n
         expect(Double(counts[0])/Double(n)) == 0.10 ± 0.02
@@ -121,7 +121,7 @@ class RandomTests: XCTestCase {
         var counts = [0, 0, 0, 0, 0]
         for _ in 0..<n {
             let i = randomElement([0, 1, 2, 3, 4])!
-            counts[i]++
+            counts[i] += 1
         }
         expect(sum(counts)) == n
     }

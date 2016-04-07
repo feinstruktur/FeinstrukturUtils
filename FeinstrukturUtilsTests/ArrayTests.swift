@@ -29,7 +29,7 @@ class ArrayTests: XCTestCase {
         let iterations = 1000
         for _ in 0..<iterations {
             if a.shuffled() == a {
-                equalCount++
+                equalCount += 1
             }
         }
         expect(equalCount/Double(iterations)) == 0.5 ± 0.05
@@ -42,7 +42,7 @@ class ArrayTests: XCTestCase {
         let iterations = 1000
         for _ in 0..<iterations {
             if a.shuffled() == a {
-                equalCount++
+                equalCount += 1
             }
         }
         expect(equalCount/Double(iterations)) == (1.0/3.0 * 1.0/2.0) ± 0.05

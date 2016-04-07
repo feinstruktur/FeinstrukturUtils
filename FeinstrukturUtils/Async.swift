@@ -85,7 +85,8 @@ public func blockFor(timeout: NSTimeInterval, until: () -> Bool) {
     var runIndex = 0
     
     while !until() {
-        let mode = runLoopModes[runIndex++ % runLoopModes.count]
+        let mode = runLoopModes[runIndex % runLoopModes.count]
+        runIndex += 1
         
         autoreleasepool {
             let checkDate = NSDate(timeIntervalSinceNow: checkEveryInterval)
