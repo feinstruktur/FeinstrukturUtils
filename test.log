@@ -1,26 +1,26 @@
-Test Suite 'All tests' started at 2016-04-07 10:31:11.703
-Test Suite 'FeinstrukturUtilsTests.xctest' started at 2016-04-07 10:31:11.706
-Test Suite 'AlgorithmsTests' started at 2016-04-07 10:31:11.708
+Test Suite 'All tests' started at 2016-06-10 14:37:24.903
+Test Suite 'FeinstrukturUtilsTests.xctest' started at 2016-06-10 14:37:24.905
+Test Suite 'AlgorithmsTests' started at 2016-06-10 14:37:24.905
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum]' started.
-Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum]' passed (0.005 seconds).
+Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum]' passed (0.279 seconds).
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum_empty]' started.
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_times]' started.
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_times]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_times_negative]' started.
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_times_negative]' passed (0.001 seconds).
-Test Suite 'AlgorithmsTests' passed at 2016-04-07 10:31:11.722.
-Test Suite 'AppInfoTests' started at 2016-04-07 10:31:11.723
+Test Suite 'AlgorithmsTests' passed at 2016-06-10 14:37:25.190.
+Test Suite 'AppInfoTests' started at 2016-06-10 14:37:25.191
 Test Case '-[FeinstrukturUtilsTests.AppInfoTests test_versionString]' started.
-Test Case '-[FeinstrukturUtilsTests.AppInfoTests test_versionString]' passed (0.002 seconds).
-Test Suite 'AppInfoTests' passed at 2016-04-07 10:31:11.728.
-Test Suite 'ArrayTests' started at 2016-04-07 10:31:11.729
+Test Case '-[FeinstrukturUtilsTests.AppInfoTests test_versionString]' passed (0.008 seconds).
+Test Suite 'AppInfoTests' passed at 2016-06-10 14:37:25.200.
+Test Suite 'ArrayTests' started at 2016-06-10 14:37:25.201
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_contains]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_contains]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_each]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_each]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_each]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_first]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_first]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_first]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexes]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexes]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexOf]' started.
@@ -28,9 +28,9 @@ Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexOf]' passed (0.001 seco
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexOf_block]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexOf_block]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_minus]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_minus]' passed (0.005 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_minus]' passed (0.004 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_multiplication]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_multiplication]' passed (0.004 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_multiplication]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_objectsAtIndexes]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_objectsAtIndexes]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_objectsAtIndexes_duplicates]' started.
@@ -40,7 +40,7 @@ Test Case '-[FeinstrukturUtilsTests.ArrayTests test_objectsAtIndexes_reverse]' p
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_objectsAtIndexes_subscript]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_objectsAtIndexes_subscript]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_remove]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_remove]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_remove]' passed (0.006 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_remove_indexes]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_remove_indexes]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_empty]' started.
@@ -48,55 +48,55 @@ Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_empty]' passed (0.0
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_one]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_one]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_three]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_three]' passed (0.003 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_three]' passed (0.005 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_two]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_two]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_tail]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_tail]' passed (0.002 seconds).
-Test Suite 'ArrayTests' passed at 2016-04-07 10:31:11.791.
-Test Suite 'AsyncTests' started at 2016-04-07 10:31:11.793
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_tail]' passed (0.003 seconds).
+Test Suite 'ArrayTests' passed at 2016-06-10 14:37:25.253.
+Test Suite 'AsyncTests' started at 2016-06-10 14:37:25.254
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor_timeout]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor_timeout]' passed (0.524 seconds).
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor_timeout]' passed (0.516 seconds).
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_delay]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_delay]' passed (0.513 seconds).
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_delay]' passed (0.512 seconds).
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Throttle]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Throttle]' passed (0.224 seconds).
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Throttle]' passed (0.199 seconds).
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Timer]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Timer]' passed (1.203 seconds).
-Test Suite 'AsyncTests' passed at 2016-04-07 10:31:14.263.
-Test Suite 'CGPointTests' started at 2016-04-07 10:31:14.264
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Timer]' passed (1.128 seconds).
+Test Suite 'AsyncTests' passed at 2016-06-10 14:37:27.619.
+Test Suite 'CGPointTests' started at 2016-06-10 14:37:27.621
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_addition]' started.
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_addition]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedAddition]' started.
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedAddition]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedSubtraction]' started.
-Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedSubtraction]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedSubtraction]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_division]' started.
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_division]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_initWithSize]' started.
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_initWithSize]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_subtraction]' started.
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_subtraction]' passed (0.001 seconds).
-Test Suite 'CGPointTests' passed at 2016-04-07 10:31:14.279.
-Test Suite 'CGRectTests' started at 2016-04-07 10:31:14.280
+Test Suite 'CGPointTests' passed at 2016-06-10 14:37:27.632.
+Test Suite 'CGRectTests' started at 2016-06-10 14:37:27.633
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_center]' started.
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_center]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_createTiles]' started.
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_createTiles]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_withPadding]' started.
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_withPadding]' passed (0.001 seconds).
-Test Suite 'CGRectTests' passed at 2016-04-07 10:31:14.288.
-Test Suite 'CGSizeTests' started at 2016-04-07 10:31:14.291
+Test Suite 'CGRectTests' passed at 2016-06-10 14:37:27.639.
+Test Suite 'CGSizeTests' started at 2016-06-10 14:37:27.640
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_addition]' started.
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_addition]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_division]' started.
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_division]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_subtraction]' started.
-Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_subtraction]' passed (0.014 seconds).
-Test Suite 'CGSizeTests' passed at 2016-04-07 10:31:14.326.
-Test Suite 'IndexSetTests' started at 2016-04-07 10:31:14.330
+Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_subtraction]' passed (0.001 seconds).
+Test Suite 'CGSizeTests' passed at 2016-06-10 14:37:27.644.
+Test Suite 'IndexSetTests' started at 2016-06-10 14:37:27.645
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_addIndex]' started.
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_addIndex]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_array]' started.
@@ -104,9 +104,9 @@ Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_array]' passed (0.00
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_array_duplicates]' started.
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_array_duplicates]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_range]' started.
-Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_range]' passed (0.002 seconds).
-Test Suite 'IndexSetTests' passed at 2016-04-07 10:31:14.342.
-Test Suite 'InfiniteRandomGeneratorTests' started at 2016-04-07 10:31:14.345
+Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_range]' passed (0.001 seconds).
+Test Suite 'IndexSetTests' passed at 2016-06-10 14:37:27.650.
+Test Suite 'InfiniteRandomGeneratorTests' started at 2016-06-10 14:37:27.650
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_empty]' started.
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_one]' started.
@@ -115,94 +115,94 @@ Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_two]'
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_two]' passed (0.109 seconds).
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests tests_next]' started.
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests tests_next]' passed (0.009 seconds).
-Test Suite 'InfiniteRandomGeneratorTests' passed at 2016-04-07 10:31:14.471.
-Test Suite 'ObserverTests' started at 2016-04-07 10:31:14.472
+Test Suite 'InfiniteRandomGeneratorTests' passed at 2016-06-10 14:37:27.772.
+Test Suite 'ObserverTests' started at 2016-06-10 14:37:27.773
 Test Case '-[FeinstrukturUtilsTests.ObserverTests test_basic]' started.
 Test Case '-[FeinstrukturUtilsTests.ObserverTests test_basic]' passed (0.002 seconds).
-Test Suite 'ObserverTests' passed at 2016-04-07 10:31:14.475.
-Test Suite 'QueueTests' started at 2016-04-07 10:31:14.476
+Test Suite 'ObserverTests' passed at 2016-06-10 14:37:27.776.
+Test Suite 'QueueTests' started at 2016-06-10 14:37:27.777
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_contains]' started.
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_contains]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_peek]' started.
-Test Case '-[FeinstrukturUtilsTests.QueueTests test_peek]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.QueueTests test_peek]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_Queue]' started.
-Test Case '-[FeinstrukturUtilsTests.QueueTests test_Queue]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests.QueueTests test_Queue]' passed (0.004 seconds).
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_values]' started.
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_values]' passed (0.001 seconds).
-Test Suite 'QueueTests' passed at 2016-04-07 10:31:14.487.
-Test Suite 'RandomTests' started at 2016-04-07 10:31:14.488
+Test Suite 'QueueTests' passed at 2016-06-10 14:37:27.787.
+Test Suite 'RandomTests' started at 2016-06-10 14:37:27.787
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_createHitmap]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_createHitmap]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_createHitmap]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_findBucket]' started.
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_findBucket]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_random]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_random]' passed (0.034 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_random]' passed (0.037 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_Double]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_Double]' passed (0.037 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_Double]' passed (0.043 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_from_to]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_from_to]' passed (0.046 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_from_to]' passed (0.049 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_empty]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_empty]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_logic]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_logic]' passed (0.006 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_logic]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_shuffled]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_shuffled]' passed (0.010 seconds).
-Test Suite 'RandomTests' passed at 2016-04-07 10:31:14.641.
-Test Suite 'ResultsTests' started at 2016-04-07 10:31:14.642
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_shuffled]' passed (0.011 seconds).
+Test Suite 'RandomTests' passed at 2016-06-10 14:37:27.942.
+Test Suite 'ResultsTests' started at 2016-06-10 14:37:27.942
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_error]' started.
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_error]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_init_succeeded_failed]' started.
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_init_succeeded_failed]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_value]' started.
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_value]' passed (0.001 seconds).
-Test Suite 'ResultsTests' passed at 2016-04-07 10:31:14.647.
-Test Suite 'SequenceTests' started at 2016-04-07 10:31:14.648
+Test Suite 'ResultsTests' passed at 2016-06-10 14:37:27.949.
+Test Suite 'SequenceTests' started at 2016-06-10 14:37:27.950
 Test Case '-[FeinstrukturUtilsTests.SequenceTests test_take]' started.
 Test Case '-[FeinstrukturUtilsTests.SequenceTests test_take]' passed (0.001 seconds).
-Test Suite 'SequenceTests' passed at 2016-04-07 10:31:14.651.
-Test Suite 'StringTests' started at 2016-04-07 10:31:14.652
+Test Suite 'SequenceTests' passed at 2016-06-10 14:37:27.953.
+Test Suite 'StringTests' started at 2016-06-10 14:37:27.954
 Test Case '-[FeinstrukturUtilsTests.StringTests test_contains]' started.
 Test Case '-[FeinstrukturUtilsTests.StringTests test_contains]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.StringTests test_split]' started.
-Test Case '-[FeinstrukturUtilsTests.StringTests test_split]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests.StringTests test_split]' passed (0.003 seconds).
 Test Case '-[FeinstrukturUtilsTests.StringTests test_split_dash]' started.
 Test Case '-[FeinstrukturUtilsTests.StringTests test_split_dash]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.StringTests test_split_empty]' started.
 Test Case '-[FeinstrukturUtilsTests.StringTests test_split_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.StringTests test_urlEncode]' started.
 Test Case '-[FeinstrukturUtilsTests.StringTests test_urlEncode]' passed (0.001 seconds).
-Test Suite 'StringTests' passed at 2016-04-07 10:31:14.661.
-Test Suite 'TupleTests' started at 2016-04-07 10:31:14.662
+Test Suite 'StringTests' passed at 2016-06-10 14:37:27.965.
+Test Suite 'TupleTests' started at 2016-06-10 14:37:27.966
 Test Case '-[FeinstrukturUtilsTests.TupleTests test_multiplication]' started.
 Test Case '-[FeinstrukturUtilsTests.TupleTests test_multiplication]' passed (0.001 seconds).
-Test Suite 'TupleTests' passed at 2016-04-07 10:31:14.664.
-Test Suite 'XCTestCase_utilsTests' started at 2016-04-07 10:31:14.665
+Test Suite 'TupleTests' passed at 2016-06-10 14:37:27.968.
+Test Suite 'XCTestCase_utilsTests' started at 2016-06-10 14:37:27.969
 Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_negative]' started.
-Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_negative]' passed (0.289 seconds).
+Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_negative]' passed (0.212 seconds).
 Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_positive]' started.
-Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_positive]' passed (0.207 seconds).
-Test Suite 'XCTestCase_utilsTests' passed at 2016-04-07 10:31:15.164.
-Test Suite 'FeinstrukturUtilsTests.xctest' passed at 2016-04-07 10:31:15.164.
-Test Suite 'All tests' passed at 2016-04-07 10:31:15.165.
-Test Suite 'All tests' started at 2016-04-07 10:31:35.779
-Test Suite 'FeinstrukturUtilsTests.xctest' started at 2016-04-07 10:31:35.780
-Test Suite 'AlgorithmsTests' started at 2016-04-07 10:31:35.781
+Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_positive]' passed (0.103 seconds).
+Test Suite 'XCTestCase_utilsTests' passed at 2016-06-10 14:37:28.286.
+Test Suite 'FeinstrukturUtilsTests.xctest' passed at 2016-06-10 14:37:28.287.
+Test Suite 'All tests' passed at 2016-06-10 14:37:28.287.
+Test Suite 'All tests' started at 2016-06-10 14:37:38.031
+Test Suite 'FeinstrukturUtilsTests.xctest' started at 2016-06-10 14:37:38.033
+Test Suite 'AlgorithmsTests' started at 2016-06-10 14:37:38.033
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum]' started.
-Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum]' passed (0.004 seconds).
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum_empty]' started.
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_sum_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_times]' started.
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_times]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_times_negative]' started.
 Test Case '-[FeinstrukturUtilsTests.AlgorithmsTests test_times_negative]' passed (0.001 seconds).
-Test Suite 'AlgorithmsTests' passed at 2016-04-07 10:31:35.788.
-Test Suite 'AppInfoTests' started at 2016-04-07 10:31:35.789
+Test Suite 'AlgorithmsTests' passed at 2016-06-10 14:37:38.043.
+Test Suite 'AppInfoTests' started at 2016-06-10 14:37:38.044
 Test Case '-[FeinstrukturUtilsTests.AppInfoTests test_versionString]' started.
-Test Case '-[FeinstrukturUtilsTests.AppInfoTests test_versionString]' passed (0.001 seconds).
-Test Suite 'AppInfoTests' passed at 2016-04-07 10:31:35.792.
-Test Suite 'ArrayTests' started at 2016-04-07 10:31:35.793
+Test Case '-[FeinstrukturUtilsTests.AppInfoTests test_versionString]' passed (0.002 seconds).
+Test Suite 'AppInfoTests' passed at 2016-06-10 14:37:38.047.
+Test Suite 'ArrayTests' started at 2016-06-10 14:37:38.048
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_contains]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_contains]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_each]' started.
@@ -216,7 +216,7 @@ Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexOf]' passed (0.001 seco
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexOf_block]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_indexOf_block]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_minus]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_minus]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_minus]' passed (0.003 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_multiplication]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_multiplication]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_objectsAtIndexes]' started.
@@ -236,55 +236,55 @@ Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_empty]' passed (0.0
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_one]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_one]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_three]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_three]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_three]' passed (0.004 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_two]' started.
-Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_two]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests.ArrayTests test_shuffled_two]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_tail]' started.
 Test Case '-[FeinstrukturUtilsTests.ArrayTests test_tail]' passed (0.001 seconds).
-Test Suite 'ArrayTests' passed at 2016-04-07 10:31:35.832.
-Test Suite 'AsyncTests' started at 2016-04-07 10:31:35.833
+Test Suite 'ArrayTests' passed at 2016-06-10 14:37:38.094.
+Test Suite 'AsyncTests' started at 2016-06-10 14:37:38.095
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor]' started.
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor_timeout]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor_timeout]' passed (0.596 seconds).
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_blockFor_timeout]' passed (0.503 seconds).
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_delay]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_delay]' passed (0.513 seconds).
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_delay]' passed (0.517 seconds).
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Throttle]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Throttle]' passed (0.225 seconds).
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Throttle]' passed (0.176 seconds).
 Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Timer]' started.
-Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Timer]' passed (1.110 seconds).
-Test Suite 'AsyncTests' passed at 2016-04-07 10:31:38.282.
-Test Suite 'CGPointTests' started at 2016-04-07 10:31:38.284
+Test Case '-[FeinstrukturUtilsTests.AsyncTests test_Timer]' passed (1.174 seconds).
+Test Suite 'AsyncTests' passed at 2016-06-10 14:37:40.473.
+Test Suite 'CGPointTests' started at 2016-06-10 14:37:40.475
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_addition]' started.
-Test Case '-[FeinstrukturUtilsTests.CGPointTests test_addition]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests.CGPointTests test_addition]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedAddition]' started.
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedAddition]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedSubtraction]' started.
-Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedSubtraction]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.CGPointTests test_augmentedSubtraction]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_division]' started.
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_division]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_initWithSize]' started.
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_initWithSize]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGPointTests test_subtraction]' started.
-Test Case '-[FeinstrukturUtilsTests.CGPointTests test_subtraction]' passed (0.002 seconds).
-Test Suite 'CGPointTests' passed at 2016-04-07 10:31:38.300.
-Test Suite 'CGRectTests' started at 2016-04-07 10:31:38.302
+Test Case '-[FeinstrukturUtilsTests.CGPointTests test_subtraction]' passed (0.001 seconds).
+Test Suite 'CGPointTests' passed at 2016-06-10 14:37:40.489.
+Test Suite 'CGRectTests' started at 2016-06-10 14:37:40.490
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_center]' started.
-Test Case '-[FeinstrukturUtilsTests.CGRectTests test_center]' passed (0.003 seconds).
+Test Case '-[FeinstrukturUtilsTests.CGRectTests test_center]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_createTiles]' started.
-Test Case '-[FeinstrukturUtilsTests.CGRectTests test_createTiles]' passed (0.003 seconds).
+Test Case '-[FeinstrukturUtilsTests.CGRectTests test_createTiles]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_withPadding]' started.
 Test Case '-[FeinstrukturUtilsTests.CGRectTests test_withPadding]' passed (0.001 seconds).
-Test Suite 'CGRectTests' passed at 2016-04-07 10:31:38.314.
-Test Suite 'CGSizeTests' started at 2016-04-07 10:31:38.315
+Test Suite 'CGRectTests' passed at 2016-06-10 14:37:40.497.
+Test Suite 'CGSizeTests' started at 2016-06-10 14:37:40.498
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_addition]' started.
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_addition]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_division]' started.
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_division]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_subtraction]' started.
 Test Case '-[FeinstrukturUtilsTests.CGSizeTests test_subtraction]' passed (0.001 seconds).
-Test Suite 'CGSizeTests' passed at 2016-04-07 10:31:38.322.
-Test Suite 'IndexSetTests' started at 2016-04-07 10:31:38.323
+Test Suite 'CGSizeTests' passed at 2016-06-10 14:37:40.504.
+Test Suite 'IndexSetTests' started at 2016-06-10 14:37:40.505
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_addIndex]' started.
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_addIndex]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_array]' started.
@@ -293,64 +293,64 @@ Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_array_duplicates]' s
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_array_duplicates]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_range]' started.
 Test Case '-[FeinstrukturUtilsTests.IndexSetTests test_init_range]' passed (0.001 seconds).
-Test Suite 'IndexSetTests' passed at 2016-04-07 10:31:38.333.
-Test Suite 'InfiniteRandomGeneratorTests' started at 2016-04-07 10:31:38.334
+Test Suite 'IndexSetTests' passed at 2016-06-10 14:37:40.513.
+Test Suite 'InfiniteRandomGeneratorTests' started at 2016-06-10 14:37:40.513
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_empty]' started.
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_one]' started.
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_one]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_two]' started.
-Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_two]' passed (0.106 seconds).
+Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests test_next_two]' passed (0.123 seconds).
 Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests tests_next]' started.
-Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests tests_next]' passed (0.009 seconds).
-Test Suite 'InfiniteRandomGeneratorTests' passed at 2016-04-07 10:31:38.456.
-Test Suite 'ObserverTests' started at 2016-04-07 10:31:38.457
+Test Case '-[FeinstrukturUtilsTests.InfiniteRandomGeneratorTests tests_next]' passed (0.008 seconds).
+Test Suite 'InfiniteRandomGeneratorTests' passed at 2016-06-10 14:37:40.651.
+Test Suite 'ObserverTests' started at 2016-06-10 14:37:40.652
 Test Case '-[FeinstrukturUtilsTests.ObserverTests test_basic]' started.
-Test Case '-[FeinstrukturUtilsTests.ObserverTests test_basic]' passed (0.002 seconds).
-Test Suite 'ObserverTests' passed at 2016-04-07 10:31:38.461.
-Test Suite 'QueueTests' started at 2016-04-07 10:31:38.462
+Test Case '-[FeinstrukturUtilsTests.ObserverTests test_basic]' passed (0.003 seconds).
+Test Suite 'ObserverTests' passed at 2016-06-10 14:37:40.657.
+Test Suite 'QueueTests' started at 2016-06-10 14:37:40.658
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_contains]' started.
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_contains]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_peek]' started.
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_peek]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_Queue]' started.
-Test Case '-[FeinstrukturUtilsTests.QueueTests test_Queue]' passed (0.003 seconds).
+Test Case '-[FeinstrukturUtilsTests.QueueTests test_Queue]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_values]' started.
 Test Case '-[FeinstrukturUtilsTests.QueueTests test_values]' passed (0.001 seconds).
-Test Suite 'QueueTests' passed at 2016-04-07 10:31:38.474.
-Test Suite 'RandomTests' started at 2016-04-07 10:31:38.475
+Test Suite 'QueueTests' passed at 2016-06-10 14:37:40.671.
+Test Suite 'RandomTests' started at 2016-06-10 14:37:40.673
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_createHitmap]' started.
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_createHitmap]' passed (0.003 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_findBucket]' started.
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_findBucket]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_random]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_random]' passed (0.040 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_random]' passed (0.033 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_Double]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_Double]' passed (0.039 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_Double]' passed (0.042 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_from_to]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_from_to]' passed (0.040 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_random_from_to]' passed (0.041 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement]' started.
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_empty]' started.
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_logic]' started.
-Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_logic]' passed (0.002 seconds).
+Test Case '-[FeinstrukturUtilsTests.RandomTests test_randomElement_logic]' passed (0.005 seconds).
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_shuffled]' started.
 Test Case '-[FeinstrukturUtilsTests.RandomTests test_shuffled]' passed (0.011 seconds).
-Test Suite 'RandomTests' passed at 2016-04-07 10:31:38.622.
-Test Suite 'ResultsTests' started at 2016-04-07 10:31:38.623
+Test Suite 'RandomTests' passed at 2016-06-10 14:37:40.821.
+Test Suite 'ResultsTests' started at 2016-06-10 14:37:40.822
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_error]' started.
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_error]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_init_succeeded_failed]' started.
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_init_succeeded_failed]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_value]' started.
 Test Case '-[FeinstrukturUtilsTests.ResultsTests test_value]' passed (0.001 seconds).
-Test Suite 'ResultsTests' passed at 2016-04-07 10:31:38.630.
-Test Suite 'SequenceTests' started at 2016-04-07 10:31:38.631
+Test Suite 'ResultsTests' passed at 2016-06-10 14:37:40.829.
+Test Suite 'SequenceTests' started at 2016-06-10 14:37:40.830
 Test Case '-[FeinstrukturUtilsTests.SequenceTests test_take]' started.
-Test Case '-[FeinstrukturUtilsTests.SequenceTests test_take]' passed (0.004 seconds).
-Test Suite 'SequenceTests' passed at 2016-04-07 10:31:38.638.
-Test Suite 'StringTests' started at 2016-04-07 10:31:38.640
+Test Case '-[FeinstrukturUtilsTests.SequenceTests test_take]' passed (0.002 seconds).
+Test Suite 'SequenceTests' passed at 2016-06-10 14:37:40.835.
+Test Suite 'StringTests' started at 2016-06-10 14:37:40.837
 Test Case '-[FeinstrukturUtilsTests.StringTests test_contains]' started.
 Test Case '-[FeinstrukturUtilsTests.StringTests test_contains]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests.StringTests test_split]' started.
@@ -361,46 +361,46 @@ Test Case '-[FeinstrukturUtilsTests.StringTests test_split_empty]' started.
 Test Case '-[FeinstrukturUtilsTests.StringTests test_split_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests.StringTests test_urlEncode]' started.
 Test Case '-[FeinstrukturUtilsTests.StringTests test_urlEncode]' passed (0.001 seconds).
-Test Suite 'StringTests' passed at 2016-04-07 10:31:38.651.
-Test Suite 'TupleTests' started at 2016-04-07 10:31:38.652
+Test Suite 'StringTests' passed at 2016-06-10 14:37:40.846.
+Test Suite 'TupleTests' started at 2016-06-10 14:37:40.847
 Test Case '-[FeinstrukturUtilsTests.TupleTests test_multiplication]' started.
 Test Case '-[FeinstrukturUtilsTests.TupleTests test_multiplication]' passed (0.001 seconds).
-Test Suite 'TupleTests' passed at 2016-04-07 10:31:38.654.
-Test Suite 'XCTestCase_utilsTests' started at 2016-04-07 10:31:38.655
+Test Suite 'TupleTests' passed at 2016-06-10 14:37:40.848.
+Test Suite 'XCTestCase_utilsTests' started at 2016-06-10 14:37:40.849
 Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_negative]' started.
-Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_negative]' passed (0.210 seconds).
+Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_negative]' passed (0.287 seconds).
 Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_positive]' started.
-Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_positive]' passed (0.110 seconds).
-Test Suite 'XCTestCase_utilsTests' passed at 2016-04-07 10:31:38.978.
-Test Suite 'FeinstrukturUtilsTests.xctest' passed at 2016-04-07 10:31:38.978.
-Test Suite 'All tests' passed at 2016-04-07 10:31:38.979.
-Test Suite 'All tests' started at 2016-04-07 10:31:40.038
-Test Suite 'FeinstrukturUtilsTests-OSX.xctest' started at 2016-04-07 10:31:40.038
-Test Suite 'AlgorithmsTests' started at 2016-04-07 10:31:40.038
+Test Case '-[FeinstrukturUtilsTests.XCTestCase_utilsTests test_waitWithTimeout_positive]' passed (0.193 seconds).
+Test Suite 'XCTestCase_utilsTests' passed at 2016-06-10 14:37:41.331.
+Test Suite 'FeinstrukturUtilsTests.xctest' passed at 2016-06-10 14:37:41.332.
+Test Suite 'All tests' passed at 2016-06-10 14:37:41.334.
+Test Suite 'All tests' started at 2016-06-10 14:37:42.370
+Test Suite 'FeinstrukturUtilsTests-OSX.xctest' started at 2016-06-10 14:37:42.370
+Test Suite 'AlgorithmsTests' started at 2016-06-10 14:37:42.371
 Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_sum]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_sum]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_sum]' passed (0.024 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_sum_empty]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_sum_empty]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_sum_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_times]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_times]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_times_negative]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_times_negative]' passed (0.000 seconds).
-Test Suite 'AlgorithmsTests' passed at 2016-04-07 10:31:40.085.
-Test Suite 'AppInfoTests' started at 2016-04-07 10:31:40.086
+Test Case '-[FeinstrukturUtilsTests_OSX.AlgorithmsTests test_times_negative]' passed (0.001 seconds).
+Test Suite 'AlgorithmsTests' passed at 2016-06-10 14:37:42.399.
+Test Suite 'AppInfoTests' started at 2016-06-10 14:37:42.400
 Test Case '-[FeinstrukturUtilsTests_OSX.AppInfoTests test_versionString]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.AppInfoTests test_versionString]' passed (0.001 seconds).
-Test Suite 'AppInfoTests' passed at 2016-04-07 10:31:40.087.
-Test Suite 'ArrayTests' started at 2016-04-07 10:31:40.088
+Test Case '-[FeinstrukturUtilsTests_OSX.AppInfoTests test_versionString]' passed (0.006 seconds).
+Test Suite 'AppInfoTests' passed at 2016-06-10 14:37:42.406.
+Test Suite 'ArrayTests' started at 2016-06-10 14:37:42.407
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_contains]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_contains]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_contains]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_each]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_each]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_each]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_first]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_first]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_first]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_indexes]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_indexes]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_indexOf]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_indexOf]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_indexOf]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_indexOf_block]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_indexOf_block]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_minus]' started.
@@ -408,41 +408,41 @@ Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_minus]' passed (0.001 se
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_multiplication]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_multiplication]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes]' passed (0.002 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes_duplicates]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes_duplicates]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes_duplicates]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes_reverse]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes_reverse]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes_subscript]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_objectsAtIndexes_subscript]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_remove]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_remove]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_remove]' passed (0.003 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_remove_indexes]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_remove_indexes]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_remove_indexes]' passed (0.003 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_empty]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_empty]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_empty]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_one]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_one]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_one]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_three]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_three]' passed (0.005 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_three]' passed (0.007 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_two]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_two]' passed (0.003 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_shuffled_two]' passed (0.004 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_tail]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_tail]' passed (0.001 seconds).
-Test Suite 'ArrayTests' passed at 2016-04-07 10:31:40.138.
-Test Suite 'AsyncTests' started at 2016-04-07 10:31:40.138
+Test Case '-[FeinstrukturUtilsTests_OSX.ArrayTests test_tail]' passed (0.002 seconds).
+Test Suite 'ArrayTests' passed at 2016-06-10 14:37:42.449.
+Test Suite 'AsyncTests' started at 2016-06-10 14:37:42.449
 Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_blockFor]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_blockFor]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_blockFor_timeout]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_blockFor_timeout]' passed (0.510 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_blockFor_timeout]' passed (0.506 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_delay]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_delay]' passed (0.512 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_delay]' passed (0.513 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_Throttle]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_Throttle]' passed (0.038 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_Throttle]' passed (0.029 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_Timer]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_Timer]' passed (1.111 seconds).
-Test Suite 'AsyncTests' passed at 2016-04-07 10:31:42.312.
-Test Suite 'CGPointTests' started at 2016-04-07 10:31:42.312
+Test Case '-[FeinstrukturUtilsTests_OSX.AsyncTests test_Timer]' passed (1.104 seconds).
+Test Suite 'AsyncTests' passed at 2016-06-10 14:37:44.605.
+Test Suite 'CGPointTests' started at 2016-06-10 14:37:44.605
 Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_addition]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_addition]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_augmentedAddition]' started.
@@ -454,69 +454,69 @@ Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_division]' passed (0.0
 Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_initWithSize]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_initWithSize]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_subtraction]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_subtraction]' passed (0.000 seconds).
-Test Suite 'CGPointTests' passed at 2016-04-07 10:31:42.317.
-Test Suite 'CGRectTests' started at 2016-04-07 10:31:42.318
+Test Case '-[FeinstrukturUtilsTests_OSX.CGPointTests test_subtraction]' passed (0.001 seconds).
+Test Suite 'CGPointTests' passed at 2016-06-10 14:37:44.610.
+Test Suite 'CGRectTests' started at 2016-06-10 14:37:44.611
 Test Case '-[FeinstrukturUtilsTests_OSX.CGRectTests test_center]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.CGRectTests test_center]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.CGRectTests test_createTiles]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.CGRectTests test_createTiles]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.CGRectTests test_withPadding]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.CGRectTests test_withPadding]' passed (0.000 seconds).
-Test Suite 'CGRectTests' passed at 2016-04-07 10:31:42.321.
-Test Suite 'CGSizeTests' started at 2016-04-07 10:31:42.321
+Test Suite 'CGRectTests' passed at 2016-06-10 14:37:44.613.
+Test Suite 'CGSizeTests' started at 2016-06-10 14:37:44.614
 Test Case '-[FeinstrukturUtilsTests_OSX.CGSizeTests test_addition]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.CGSizeTests test_addition]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.CGSizeTests test_division]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.CGSizeTests test_division]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.CGSizeTests test_subtraction]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.CGSizeTests test_subtraction]' passed (0.000 seconds).
-Test Suite 'CGSizeTests' passed at 2016-04-07 10:31:42.324.
-Test Suite 'IndexSetTests' started at 2016-04-07 10:31:42.324
+Test Suite 'CGSizeTests' passed at 2016-06-10 14:37:44.616.
+Test Suite 'IndexSetTests' started at 2016-06-10 14:37:44.617
 Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_addIndex]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_addIndex]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_addIndex]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_init_array]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_init_array]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_init_array_duplicates]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_init_array_duplicates]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_init_range]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.IndexSetTests test_init_range]' passed (0.000 seconds).
-Test Suite 'IndexSetTests' passed at 2016-04-07 10:31:42.327.
-Test Suite 'InfiniteRandomGeneratorTests' started at 2016-04-07 10:31:42.328
+Test Suite 'IndexSetTests' passed at 2016-06-10 14:37:44.620.
+Test Suite 'InfiniteRandomGeneratorTests' started at 2016-06-10 14:37:44.620
 Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests test_next_empty]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests test_next_empty]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests test_next_one]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests test_next_one]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests test_next_one]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests test_next_two]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests test_next_two]' passed (0.078 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests test_next_two]' passed (0.089 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests tests_next]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests tests_next]' passed (0.006 seconds).
-Test Suite 'InfiniteRandomGeneratorTests' passed at 2016-04-07 10:31:42.416.
-Test Suite 'ObserverTests' started at 2016-04-07 10:31:42.416
+Test Case '-[FeinstrukturUtilsTests_OSX.InfiniteRandomGeneratorTests tests_next]' passed (0.007 seconds).
+Test Suite 'InfiniteRandomGeneratorTests' passed at 2016-06-10 14:37:44.719.
+Test Suite 'ObserverTests' started at 2016-06-10 14:37:44.720
 Test Case '-[FeinstrukturUtilsTests_OSX.ObserverTests test_basic]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ObserverTests test_basic]' passed (0.001 seconds).
-Test Suite 'ObserverTests' passed at 2016-04-07 10:31:42.418.
-Test Suite 'QueueTests' started at 2016-04-07 10:31:42.418
+Test Suite 'ObserverTests' passed at 2016-06-10 14:37:44.722.
+Test Suite 'QueueTests' started at 2016-06-10 14:37:44.722
 Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_contains]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_contains]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_contains]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_peek]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_peek]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_peek]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_Queue]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_Queue]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_Queue]' passed (0.003 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_values]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.QueueTests test_values]' passed (0.000 seconds).
-Test Suite 'QueueTests' passed at 2016-04-07 10:31:42.422.
-Test Suite 'RandomTests' started at 2016-04-07 10:31:42.422
+Test Suite 'QueueTests' passed at 2016-06-10 14:37:44.729.
+Test Suite 'RandomTests' started at 2016-06-10 14:37:44.730
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_createHitmap]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_createHitmap]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_findBucket]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_findBucket]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random]' passed (0.064 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random]' passed (0.066 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random_Double]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random_Double]' passed (0.070 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random_Double]' passed (0.077 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random_from_to]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random_from_to]' passed (0.080 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_random_from_to]' passed (0.081 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_randomElement]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_randomElement]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_randomElement_empty]' started.
@@ -525,40 +525,40 @@ Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_randomElement_logic]' s
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_randomElement_logic]' passed (0.003 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_shuffled]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.RandomTests test_shuffled]' passed (0.008 seconds).
-Test Suite 'RandomTests' passed at 2016-04-07 10:31:42.653.
-Test Suite 'ResultsTests' started at 2016-04-07 10:31:42.654
+Test Suite 'RandomTests' passed at 2016-06-10 14:37:44.971.
+Test Suite 'ResultsTests' started at 2016-06-10 14:37:44.971
 Test Case '-[FeinstrukturUtilsTests_OSX.ResultsTests test_error]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ResultsTests test_error]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ResultsTests test_init_succeeded_failed]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ResultsTests test_init_succeeded_failed]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.ResultsTests test_value]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.ResultsTests test_value]' passed (0.000 seconds).
-Test Suite 'ResultsTests' passed at 2016-04-07 10:31:42.657.
-Test Suite 'SequenceTests' started at 2016-04-07 10:31:42.657
+Test Suite 'ResultsTests' passed at 2016-06-10 14:37:44.974.
+Test Suite 'SequenceTests' started at 2016-06-10 14:37:44.975
 Test Case '-[FeinstrukturUtilsTests_OSX.SequenceTests test_take]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.SequenceTests test_take]' passed (0.001 seconds).
-Test Suite 'SequenceTests' passed at 2016-04-07 10:31:42.659.
-Test Suite 'StringTests' started at 2016-04-07 10:31:42.659
+Test Suite 'SequenceTests' passed at 2016-06-10 14:37:44.976.
+Test Suite 'StringTests' started at 2016-06-10 14:37:44.977
 Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_contains]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_contains]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_split]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_split]' passed (0.001 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_split]' passed (0.003 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_split_dash]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_split_dash]' passed (0.000 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_split_dash]' passed (0.001 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_split_empty]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_split_empty]' passed (0.000 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_urlEncode]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.StringTests test_urlEncode]' passed (0.000 seconds).
-Test Suite 'StringTests' passed at 2016-04-07 10:31:42.664.
-Test Suite 'TupleTests' started at 2016-04-07 10:31:42.664
+Test Suite 'StringTests' passed at 2016-06-10 14:37:44.983.
+Test Suite 'TupleTests' started at 2016-06-10 14:37:44.984
 Test Case '-[FeinstrukturUtilsTests_OSX.TupleTests test_multiplication]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.TupleTests test_multiplication]' passed (0.001 seconds).
-Test Suite 'TupleTests' passed at 2016-04-07 10:31:42.666.
-Test Suite 'XCTestCase_utilsTests' started at 2016-04-07 10:31:42.666
+Test Case '-[FeinstrukturUtilsTests_OSX.TupleTests test_multiplication]' passed (0.000 seconds).
+Test Suite 'TupleTests' passed at 2016-06-10 14:37:44.985.
+Test Suite 'XCTestCase_utilsTests' started at 2016-06-10 14:37:44.985
 Test Case '-[FeinstrukturUtilsTests_OSX.XCTestCase_utilsTests test_waitWithTimeout_negative]' started.
-Test Case '-[FeinstrukturUtilsTests_OSX.XCTestCase_utilsTests test_waitWithTimeout_negative]' passed (0.203 seconds).
+Test Case '-[FeinstrukturUtilsTests_OSX.XCTestCase_utilsTests test_waitWithTimeout_negative]' passed (0.209 seconds).
 Test Case '-[FeinstrukturUtilsTests_OSX.XCTestCase_utilsTests test_waitWithTimeout_positive]' started.
 Test Case '-[FeinstrukturUtilsTests_OSX.XCTestCase_utilsTests test_waitWithTimeout_positive]' passed (0.108 seconds).
-Test Suite 'XCTestCase_utilsTests' passed at 2016-04-07 10:31:42.979.
-Test Suite 'FeinstrukturUtilsTests-OSX.xctest' passed at 2016-04-07 10:31:42.979.
-Test Suite 'All tests' passed at 2016-04-07 10:31:42.980.
+Test Suite 'XCTestCase_utilsTests' passed at 2016-06-10 14:37:45.305.
+Test Suite 'FeinstrukturUtilsTests-OSX.xctest' passed at 2016-06-10 14:37:45.305.
+Test Suite 'All tests' passed at 2016-06-10 14:37:45.306.
