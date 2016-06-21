@@ -103,5 +103,9 @@ function main {
     fi
 }
 
-main $@ | grep 'Test Case\|Test Suite' > test.log
+LOGFILE=test.log
+date 2>&1 | tee $LOGFILE
+uname -a 2>&1 | tee -a $LOGFILE
+set -o pipefail
+main $@ | grep 'Test Case\|Test Suite\|Executed\|expected' | tee -a $LOGFILE
 
